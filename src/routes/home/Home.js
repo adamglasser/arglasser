@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Header from "../../components/header/header";
+import Party from './assets/Success.png'
 
 const Home = () => {
     const navigate = useNavigate();
@@ -25,7 +26,7 @@ const Home = () => {
             </div>
 
             <div className="col-sm-6 col-sm-6 col-9 order-md-2 order-1">
-              <lottie-player class="mx-auto" src="assets/json/animation-digital-agency.json" background="transparent" speed="1" loop="" autoplay=""></lottie-player>
+              <img className="img-fluid" alt="Party Graphic" src={Party}></img>
             </div>
           </div>
         </div>
