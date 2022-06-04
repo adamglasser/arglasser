@@ -1,7 +1,6 @@
 
 import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./routes/home/Home";
-import './styles/app.scss';
 
 function App() {
   return (
