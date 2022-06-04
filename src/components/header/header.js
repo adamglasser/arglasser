@@ -1,30 +1,92 @@
+/* eslint-disable react/jsx-no-target-blank */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link, useNavigate } from "react-router-dom";
 
+import './styles/header.css';
+
 import Lightbulb from './assets/lightbulb.svg'
+import { useRef } from "react";
 
 const NavLink = ({ to, label }) => (<>
-<li><Link to={to} className="nav-link px-2 link-dark">{label}</Link></li>
+  <li className="nav-item col-6 col-lg-auto"><Link to={to} className="nav-link py-2 px-0 px-lg-3 ht">{label}</Link></li>
 </>)
 
 const Header = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    return(<><div className="container">
-<header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-  <div onClick={() => navigate('/')} style={{cursor: 'pointer'}} className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-    <h3 className="fw-bold"><img src={Lightbulb} alt="Rocket" height={60} /></h3>
-  </div>
+  const navBody = useRef();
 
-  <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-    <NavLink to="Work" label="Work" className="nav-link px-2 link-dark" />
-    <NavLink to="About" label="About" className="nav-link px-2 link-dark" />
-    <NavLink to="Resume" label="Resume" className="nav-link px-2 link-dark" />
-  </ul>
+  const onToggle = () => { navBody.current.classList.toggle('show') }
 
-  <div className="col-md-3 text-end">
-    <button type="button" className="btn btn-outline-dark fw-bold rounded-0 border border-2 border-dark px-4"><small>Let{`'`}s chat</small></button>
-  </div>
-</header>
-</div></>)}
+  return (<>
+    <header className="navbar navbar-expand-lg navbar-dark bd-navbar sticky-top main-header-nav">
+      <nav className="container-xxl bd-gutter flex-wrap flex-lg-nowrap " aria-label="Main navigation ">
+        <div className="d-lg-none" style={{ width: '2.25rem' }}></div>
+
+        <div className="navbar-brand p-0 me-0 me-lg-2 text-peach" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-boxes" viewBox="0 0 16 16">
+            <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z" />
+          </svg>
+        </div>
+
+        <button onClick={() => onToggle()} className="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" className="bi bi-three-dots" viewBox="0 0 16 16">
+            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+          </svg>
+        </button>
+
+        <div className="offcanvas-lg offcanvas-end flex-grow-1 main-header-nav-expand" ref={navBody} id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true" >
+          <div className="offcanvas-header px-4 pb-0">
+            <h5 className="offcanvas-title text-light fs-3" id="bdNavbarOffcanvasLabel">Adam Glasser</h5>
+            <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar" onClick={() => onToggle()}></button>
+          </div>
+
+
+          <div className="offcanvas-body p-4 pt-0 p-lg-0">
+
+            <hr className="d-lg-none text-white-50" />
+
+            <ul className="navbar-nav flex-row flex-wrap bd-navbar-nav">
+              <NavLink to="Work" label="Work" className="nav-link px-2" />
+              <NavLink to="About" label="About" className="nav-link px-2" />
+              <NavLink to="Resume" label="Resume" className="nav-link px-2" />
+            </ul>
+
+            <hr className="d-lg-none text-white-50" />
+
+            <ul className="navbar-nav flex-row flex-wrap ms-md-auto">
+              <li className="nav-item col-6 col-lg-auto">
+                <a className="nav-link py-2 px-0 px-lg-2" href="https://instagram.com/arglasser" target="_blank" rel="noopener">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                  </svg>
+                  <small className="d-lg-none ms-2">Instagram</small>
+                </a>
+              </li>
+              <li className="nav-item col-6 col-lg-auto">
+                <a className="nav-link py-2 px-0 px-lg-2" href="https://www.linkedin.com/in/adam-glasser-109148142/" target="_blank" rel="noopener">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                  </svg>
+                  <small className="d-lg-none ms-2">LinkedIn</small>
+                </a>
+              </li>
+              <li className="nav-item col-6 col-lg-auto">
+                <a className="nav-link py-2 px-0 px-lg-2" href="https://codepen.io/adamglasser" target="_blank" rel="noopener">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-square" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                    <path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z" />
+                  </svg>
+                  <small className="d-lg-none ms-2">Codepen</small>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </header></>)
+}
 
 export default Header;
