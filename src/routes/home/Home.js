@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Header from "../../components/header/header";
-import Desk from './assets/desk-illustration.svg'
+import Blobs from './assets/Waihou.svg'
 
 const MainSlice = () => {
     const navigate = useNavigate();
@@ -12,21 +12,18 @@ const MainSlice = () => {
                         <div class="pb-xl-5 my-auto">
 
 
-                            <h1 class="display-1 mb-3 pb-3 fw-bold text-slate">
-                                Hi! I Am <br /> <span>Adam Glasser</span>
+                            <h1 class="display-1 mb-3 pb-3 fw-bold text-light">
+                               Adam Glasser
                             </h1>
-                            <h3 className="mb-4">Designing engaging digital experiences for <span className="fw-bold">4 years</span> as a solutions architect</h3>
+                            <h3 className="mb-4 text-light">Designing engaging digital experiences for <span className="fw-bold">4 years</span> as a solutions architect</h3>
                             <div class="d-md-flex align-items-md-start mt-5">
                                 <div onClick={() => navigate('/contact')} class="fs-4 btn btn-lg btn-orange text-white rounded-0 flex-shrink-0 me-md-4 mb-md-0 mb-sm-4 mb-3">Hire me</div>
-                                <div onClick={() => navigate('/contact')} class="fs-4 btn btn-white btn-lg rounded-0 text-dark ms-1 ms-md-4 mb-md-0 mb-sm-4 mb-3 fw-bold">Work</div>
+                                <div onClick={() => navigate('/contact')} class="fs-4 btn btn-white btn-lg rounded-0 text-light ms-2 ms-md-4 mb-md-0 mb-sm-4 mb-3 fw-bold">Work</div>
                             </div>
                         </div>
 
                     </div>
 
-                    <div className="col-sm-6 col-9 order-md-2 order-1 d-flex">
-                        <img className="img-fluid text-center" alt="Party Graphic" src={Desk}></img>
-                    </div>
                 </div>
             </div>
         </>
@@ -35,7 +32,7 @@ const MainSlice = () => {
 
 const Home = () => {
     return (<>
-        <div style={{ minHeight: '100vh' }} className="bg-white d-flex flex-column">
+        <div style={{ minHeight: '100vh', backgroundImage: `url(${Blobs})`, backgroundSize: 'cover' }} className="bg-black d-flex flex-column">
             <Header />
             <MainSlice />
             
