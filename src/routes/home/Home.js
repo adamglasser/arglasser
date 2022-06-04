@@ -1,17 +1,16 @@
 import { useNavigate } from "react-router-dom";
 import Header from "../../components/header/header";
-import Party from './assets/Success.png'
-import Wave from './assets/wave.svg'
+import Desk from './assets/desk-illustration.svg'
 
 const Home = () => {
     const navigate = useNavigate();
     return (<>
-        <div style={{ minHeight: '100vh' }} className="bg-white">
+        <div style={{ minHeight: '100vh' }} className="bg-white d-flex flex-column">
             <Header />
-            <div className="container position-relative py-5">
-                <div class="row justify-content-md-start justify-content-center">
+            <div className="container py-5 h-100 d-flex flex-column flex-grow-1">
+                <div class="row justify-content-md-start justify-content-center my-auto">
                     <div className="col-md-6 col-sm-8 order-md-1 order-2 d-flex flex-column justify-content-between mt-4 pt-2 text-md-start text-center">
-                        <div class="mb-md-5 pb-xl-5 mb-4">
+                        <div class="pb-xl-5 my-auto">
 
 
                             <h1 class="display-1 mb-3 pb-3">
@@ -26,15 +25,15 @@ const Home = () => {
 
                     </div>
 
-                    <div className="col-sm-6 col-sm-6 col-9 order-md-2 order-1">
-                        <img className="img-fluid" alt="Party Graphic" src={Party}></img>
+                    <div className="col-sm-6 col-9 order-md-2 order-1 d-flex">
+                        <img className="img-fluid text-center" alt="Party Graphic" src={Desk}></img>
                     </div>
                 </div>
             </div>
-            <div className="bg-slate text-white">
+        </div>
+        <div className="bg-slate text-white">
                 asdsjdkj
             </div>
-        </div>
     </>)
 }
 
