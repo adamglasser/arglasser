@@ -12,7 +12,7 @@ const MainSlice = () => {
                         <div className="p-5 w-100 bg-black rounded rounded-5">
 
 
-                            <h1 className="display-2 mb-3 pb-3 fw-bold text-light">
+                            <h1 className="display-2 mb-2 pb-3 fw-bold text-light">
                                 Adam Glasser
                             </h1>
                             <h3 className="text-white"> is a {' '}
@@ -42,7 +42,6 @@ const Home = () => {
         <div style={{ minHeight: '100vh', backgroundImage: `url(${Blobs})`, backgroundSize: 'cover', backgroundPosition: 'bottom' }} className="bg-black d-flex flex-column">
             <Header />
             <MainSlice />
-
         </div>
     </>
     )
