@@ -59,7 +59,7 @@ const About = () => {
 
                             <h1 className="pb-2 pb-md-3 fw-bold">About Me</h1>
                             <p className="fs-xl pb-4 mb-1 mb-md-2 mb-lg-3" >
-                                I am a passionate developer, marketing, designer, and problem solver with experience across a wide range of technology and industries. I've worked with large corporations and budding startups to design, build, and implement solutions to drive business KPIs and engage customers.</p>
+                                I am a passionate developer, marketer, designer, and problem solver with experience across a wide range of technologies and industries. I've worked clients of all sizes, from large corporations to budding startups, and helped them design, build, and implement solutions to drive business KPIs and engage customers.</p>
                             <div className="row row-cols-3 pt-4 pt-md-5 mt-2 mt-xl-4">
                                 <div className="col">
                                     <h3 className="h2 mb-2">
