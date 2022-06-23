@@ -1,0 +1,80 @@
+.funky-pattern{
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (max-width: 992px) {
+        background-image: url('../assets/Plain-Pink-Noise.svg');
+    }
+
+    @media screen and (min-width: 992px) {
+        background-image: url('../assets/FunkyScrib2.svg');
+    }
+}
+
+.adam-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.adam-peep {
+    position: absolute;
+    bottom: 0;
+
+    @media screen and (max-width: 576px){ // xs
+        display: none;
+    }
+    @media screen and (min-width: 576px) and (max-width: 768px){ // sm
+        display: none;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px){ // md
+        display: none;
+    }
+    @media screen and (min-width: 992px) and (max-width: 1200px){ // lg
+        height: 60vh;
+        left: 0;
+        transform: translateX(-6vw)
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1400px){ // xl
+        height: 80vh;
+        left: 0;
+        transform: translateX(-170px)
+    }
+    @media screen and (min-width: 1400px){ // xxl
+        height: 100vh;
+        left: 0;
+        transform: translateX(-220px)
+    }
+    }
+
+.intro-text-box {
+    padding-top: 5%;
+    & h1{
+        @media screen and (max-width: 576px) { // Screens smaller than sm breakpoint
+            font-size: 7rem;
+        }
+        @media screen and (min-width: 576px) and (max-width: 768px) { // Screens smaller than md breakpoint
+            font-size: 8rem;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1200px) { // Screens smaller than md breakpoint
+            font-size: 9rem;
+        }
+        
+        @media screen and (min-width: 1200px) { // screens bigger than md breakpoint
+            font-size: 10rem;
+        }
+    }
+    & p{
+        
+        @media screen and (max-width: 576px) { // screens smaller than xs breakpoint
+            font-size: 1.3rem ;
+        }
+        @media screen and (min-width: 576px) and (max-width: 1200px)  { // screens smaller than md breakpoint
+            font-size: 1.5rem;
+        }
+        @media screen and (min-width: 1200px){ // screens bigger than md breakpoint
+            font-size: 1.6rem;
+        }
+
+    }
+}
