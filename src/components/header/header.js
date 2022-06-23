@@ -40,9 +40,9 @@ const Header = ({textClassName}) => {
 
             <ul className="navbar-nav flex-row flex-wrap bd-navbar-nav">
             <NavLink textClassName={textClassName} to="/" label="Home" className="px-2" />
-              <NavLink textClassName={textClassName} to="Work" label="Work" className="px-2" />
-              <NavLink textClassName={textClassName} to="About" label="About" className="px-2" />
-              <NavLink textClassName={textClassName} to="Resume" label="Resume" className="px-2" />
+              <NavLink textClassName={textClassName} to="/Work" label="Work" className="px-2" />
+              <NavLink textClassName={textClassName} to="/About" label="About" className="px-2" />
+              <NavLink textClassName={textClassName} to="/Resume" label="Resume" className="px-2" />
             </ul>
 
             <hr className="d-lg-none text-white-50" />

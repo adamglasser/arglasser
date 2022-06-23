@@ -1,3 +1,8 @@
+.funky-pattern::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1; // hide images
+    content:url('../assets/Plain-Pink-Noise-min.png') url('../assets/Plain-Pink-Noise-min.png') url('../assets/FunkyScrib3-min.png')   // load images
+ }
+
 .funky-pattern{
     min-height: 100vh;
     background-size: cover;
@@ -19,6 +24,7 @@
         background-image: url('../assets/FunkyScrib2-min.png');
     }
 }
+
 
 
 .display-text-mobile {
