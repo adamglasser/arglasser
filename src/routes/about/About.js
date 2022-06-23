@@ -52,7 +52,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-slate about-slice-1 text-white p-5'>
+            <div className='bg-purple-dark about-slice-1 text-white p-5'>
                 <div ref={startAbout} className="container position-relative zindex-5 pt-5">
                     <div className="row py-3">
                         <div className="col-lg-8">
@@ -102,7 +102,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        <section class="bg-slate mt-n2 p-5">
+        <section class="bg-purple-dark mt-n2 p-5">
         <div class="card border-0 container ripple-container bg-black">
           <div class="card-body p-md-5 p-4 bg-size-cover ">
             <div class="py-md-5 py-4 text-center">
