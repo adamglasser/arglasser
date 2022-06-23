@@ -12,10 +12,10 @@ const MainSlice = () => {
                         <div className="p-5 w-100 bg-black rounded rounded-5">
 
 
-                            <h1 className="display-2 mb-2 pb-3 fw-bold text-light">
+                            <h1 className="display-2 fw-bold text-light">
                                 Adam Glasser
                             </h1>
-                            <h3 className="text-white"> is a {' '}
+                            <h3 className="text-white">
                                 <span style={{ color: '#ff9fd6' }}>developer</span>, {' '}
                                 <span style={{ color: '#61dafb' }}>marketer</span>, {' '}
                                 <span style={{ color: '#4ca96d' }}>creator</span>,{' '} 
