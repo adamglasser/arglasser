@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import Header from '../../components/header/header';
-import AdamPeep from './assets/AG-Open-Peep.svg'
-import AdamPeepMobile from './assets/AG-Open-Peep-Mobile.svg'
+import AdamPeep from './assets/AG-Open-Peep-min.svg'
+import AdamPeepMobile from './assets/AG-Open-Peep-Mobile-min.svg'
 import './styles/About.scss'
 
 
