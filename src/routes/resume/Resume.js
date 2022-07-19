@@ -1,6 +1,5 @@
 import Header from "../../components/header/header"
 
-import ResumePdf from './assets/Adam Glasser Resume.pdf'
 
 const Resume = () => {
     return (
@@ -117,7 +116,7 @@ const Resume = () => {
                             developed an interest in
                             technology, and data driven
                             storytelling. He currently
-                            resides in Summit County, CO
+                            resides in Bozeman
                             where he works to deliver
                             engaging multi-channel
                             experiences.
@@ -161,7 +160,7 @@ const Resume = () => {
                     </div>
                 </div>
                 {/** Download */}
-                <a href={ResumePdf} download="Adam Glasser Resume" className="mt-3 ms-md-4 btn btn-primary">Download Resume</a>
+                <a href="https://arglasser.azureedge.net/public/AG%20-%20Resume.pdf" download="Adam Glasser Resume" className="mt-3 ms-md-4 btn btn-primary">Download Resume</a>
             </div>
         </>
     )

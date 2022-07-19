@@ -39,7 +39,7 @@ const MainSlice = () => {
 
 const Home = () => {
     return (<>
-        <div style={{ minHeight: '100vh', backgroundImage: `url(${Blobs})`, backgroundSize: 'cover', backgroundPosition: 'bottom' }} className="bg-black d-flex flex-column">
+        <div style={{ minHeight: '100vh', backgroundImage: `url(https://arglasser.azureedge.net/public/Waihou.png)`, backgroundSize: 'cover', backgroundPosition: 'bottom' }} className="bg-black d-flex flex-column">
             <Header />
             <MainSlice />
         </div>

@@ -14,10 +14,6 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper";
 
-import Adam from './assets/adam-min.jpg'
-import AdamBike from './assets/adam-bike-min.jpg'
-import AdamHike from './assets/adam-hike-min.PNG'
-import AdamBoard from './assets/adam-board-min.jpg'
 import './styles/About.scss'
 
 import ReactLogo from './assets/react-logo.png'
@@ -64,12 +60,12 @@ const About = () => {
                     <div class="col-lg-6 mt-xl-3 d-flex pb-5">
                         <div class="row row-cols-2 gx-3 gx-lg-4 my-auto p-xxl-5">
                             <div class="col pt-lg-5 mt-lg-1">
-                                <img src={Adam} class="img-fluid  rounded-3 mb-3 mb-lg-4" alt="Image" />
-                                <img src={AdamBike} class="img-fluid  rounded-3" alt="Image" />
+                                <img src="https://arglasser.azureedge.net/public/adam-min.jpg" class="img-fluid  rounded-3 mb-3 mb-lg-4" alt="Image" />
+                                <img src="https://arglasser.azureedge.net/public/adam-bike-min.jpg" class="img-fluid  rounded-3" alt="Image" />
                             </div>
                             <div class="col">
-                                <img src={AdamHike} class="img-fluid  rounded-3 mb-3 mb-lg-4" alt="Image" />
-                                <img src={AdamBoard} class="img-fluid  rounded-3" alt="Image" />
+                                <img src="https://arglasser.azureedge.net/public/adam-hike-min.PNG" class="img-fluid  rounded-3 mb-3 mb-lg-4" alt="Image" />
+                                <img src="https://arglasser.azureedge.net/public/adam-board-min.jpg" class="img-fluid  rounded-3" alt="Image" />
                             </div>
                         </div>
                     </div>
