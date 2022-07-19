@@ -1,14 +1,14 @@
 
-import { Link,} from "react-router-dom";
+import { Link, } from "react-router-dom";
 import { useRef } from "react";
 
 import './styles/header.scss';
 
-const NavLink = ({ to, label, textClassName}) => (<>
-  <li className="nav-item col-6 col-lg-auto py-1"><Link to={to}  className={`${textClassName ? textClassName : ''} custom-nav-link py-2 px-0 px-lg-3 ht`}>{label}</Link></li>
+const NavLink = ({ to, label, textClassName }) => (<>
+  <li className="nav-item col-6 col-lg-auto py-1"><Link to={to} className={`${textClassName ? textClassName : ''} custom-nav-link py-2 px-0 px-lg-3 ht`}>{label}</Link></li>
 </>)
 
-const Header = ({textClassName}) => {
+const Header = ({ textClassName }) => {
 
 
   const navBody = useRef();
@@ -16,7 +16,7 @@ const Header = ({textClassName}) => {
   const onToggle = () => { navBody.current.classList.toggle('show') }
 
   return (<>
-    <header className="navbar navbar-expand-lg navbar-dark bd-navbar sticky-top main-header-nav">
+    <header className="navbar navbar-expand-lg navbar-dark bd-navbar main-header-nav">
       <nav className="container-fluid bd-gutter flex-wrap flex-lg-nowrap " aria-label="Main navigation ">
         <div className="d-lg-none" style={{ width: '2.25rem' }}></div>
 
@@ -39,10 +39,11 @@ const Header = ({textClassName}) => {
             <hr className="d-lg-none text-white-50" />
 
             <ul className="navbar-nav flex-row flex-wrap bd-navbar-nav">
-            <NavLink textClassName={textClassName} to="/" label="Home" className="px-2" />
+              <NavLink textClassName={textClassName} to="/" label="Home" className="px-2" />
               <NavLink textClassName={textClassName} to="/Work" label="Work" className="px-2" />
               <NavLink textClassName={textClassName} to="/About" label="About" className="px-2" />
               <NavLink textClassName={textClassName} to="/Resume" label="Resume" className="px-2" />
+              <NavLink textClassName={textClassName} to="/Contact" label="Contact" className="px-2" />
             </ul>
 
             <hr className="d-lg-none text-white-50" />
