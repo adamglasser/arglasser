@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Header from "../../components/header/header";
-import Blobs from './assets/Waihou.svg'
+import Blobs from './assets/Waihou-min.png'
 
 const MainSlice = () => {
     const navigate = useNavigate();
