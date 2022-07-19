@@ -5,6 +5,7 @@ import Header from "../../components/header/header";
 
 import toast from 'react-hot-toast'
 
+
 import './styles/contact.scss'
 
 const Contact = () => {
@@ -66,6 +67,7 @@ const Contact = () => {
                     setToken(token);
                 }}
             />
+            <div id="contact-wave"></div>
             <div className="bg-light d-flex flex-column" style={{ minHeight: '100vh' }}>
                 <div>
                     <Header textClassName={'dark-nav-link'} />
