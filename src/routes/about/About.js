@@ -183,7 +183,7 @@ const About = () => {
                             </div>
                             <div class="col-lg-6 text-dark">
                                 <h1 class="display-5 fw-bold lh-1 mb-3 text-black">My Work</h1>
-                                <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                                <p class="lead">Click the link below to take a look at my portfolio where I highlight a few projects I've recently completed. I have experience working on a wide variety of projects using a number of different tools and technologies. I pride myself on my ability to select the right tool, or tech stack, for the job.</p>
                                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                                     <button type="button" class="mt-4 btn btn-purple text-white btn-lg px-4 me-md-2" onClick={() => navigate('/Work')}>Portfolio</button>
                                 </div>

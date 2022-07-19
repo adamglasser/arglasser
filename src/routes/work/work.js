@@ -31,8 +31,8 @@ import { useNavigate } from "react-router-dom";
 
 const Work = () => {
     useEffect(() => {
-        window.scrollTo(0,0)
-    },[])
+        window.scrollTo(0, 0)
+    }, [])
 
     const navigate = useNavigate()
     return (
@@ -41,7 +41,7 @@ const Work = () => {
             <div className="spacer my-5"></div>
             <section className="container align-items-center justify-content-between">
                 <h1 className="mb-sm-0 me-sm-3 fw-bold text-black display-3">Portfolio</h1>
-                <p className="text-muted">Take a look at some of my past work below</p>
+                <p className="text-muted">Take a look at some of my previous work below</p>
             </section>
             <section className="container pb-2 pb-lg-3">
                 {/** Nimbl */}
@@ -114,7 +114,7 @@ const Work = () => {
                                 <span className="m-1 badge text-bg-purple text-white">Jest</span>
                                 <span className="m-1 badge text-bg-purple text-white">Cypress</span>
                             </div>
-                            <p className="pb-3 mb-2 mb-md-3">Malesuada eu cursus natoque purus ipsum nunc, velit cras tellus. Maecenas viverra pellentesque at ultrices purus vitae quis erat volutpat. Turpis auctor neque bibendum id pellentesque ut egestas. Donec ut faucibus nisl nec at purus. Cursus vel gravida gravida purus varius feugiat.Semper mauris id adipiscing est. Nam leo rutrum gravida curabitur at vel risus.</p>
+                            <p className="pb-3 mb-2 mb-md-3">Nimbl is a web based application that allows a user to configure a promotional email, webpage for address collection, and a direct mail gift to be sent to a list of recipients. It was written in React Typescript on the frontend and Node in the back, and uses a GraphQl API. This API contains a number of external datasources including Azure Cosmos Db/Table Storage, PFL's own Generic API, and some third party services like Firebase for authentication and Mailgun for email communications. This application was designed and architected by me, and built by myself and a couple other PFL developers over a period of around 8 months.  </p>
                             <a href="https://nimbl.pfl.com/home" target={"_blank"} className="btn btn-dark text-white px-3">View Project</a>
                         </div>
                     </div>
@@ -175,7 +175,7 @@ const Work = () => {
                                 <span className="m-1 badge text-bg-purple text-white">Microsoft SQL</span>
                                 <span className="m-1 badge text-bg-purple text-white">Magic Auth</span>
                             </div>
-                            <p className="pb-3 mb-2 mb-md-3">Malesuada eu cursus natoque purus ipsum nunc, velit cras tellus. Maecenas viverra pellentesque at ultrices purus vitae quis erat volutpat. Turpis auctor neque bibendum id pellentesque ut egestas. Donec ut faucibus nisl nec at purus. Cursus vel gravida gravida purus varius feugiat.Semper mauris id adipiscing est. Nam leo rutrum gravida curabitur at vel risus.</p>
+                            <p className="pb-3 mb-2 mb-md-3">This initiative came about as a result of a number of conversations with stakeholders across Viasat's marketing, data analytics, and compliance teams, who were searching for a better way to reward their customers for staying up to date on service payments, and attract new clients. This project consisted of a custom integration to the Client's Marketo instance that allowed us to pull down eligible recipients, a customer and agent facing portal that allowed reps and clients to check on their program status in real time, as well as a custom Tableau dashboard that gave the data and marketing teams insight into the effectiveness of the program.</p>
                             <a href="https://viasatrewards.directmail.tech/" target={"_blank"} className="btn btn-dark text-white px-3">View Project</a>
                         </div>
                     </div>
@@ -236,7 +236,7 @@ const Work = () => {
                                 <span className="m-1 badge text-bg-purple text-white">Marketo</span>
                                 <span className="m-1 badge text-bg-purple text-white">Mailgun</span>
                             </div>
-                            <p className="pb-3 mb-2 mb-md-3">Malesuada eu cursus natoque purus ipsum nunc, velit cras tellus. Maecenas viverra pellentesque at ultrices purus vitae quis erat volutpat. Turpis auctor neque bibendum id pellentesque ut egestas. Donec ut faucibus nisl nec at purus. Cursus vel gravida gravida purus varius feugiat.Semper mauris id adipiscing est. Nam leo rutrum gravida curabitur at vel risus.</p>
+                            <p className="pb-3 mb-2 mb-md-3">As a result of the Covid-19 pandemic driving employees towards remote work, the vast majority of PFL's clients were not able to continue sending Direct Mail to customers and prospects using the corporate address data contained within their CRM/MA platforms. In addition, a host of compliance and data integrity issues prevented these customers from collecting address data within those CRM/MA instances, leaving them without a solution to break through the digital noise. To solve this problem I created the preferred address capture service that PFL now offers to a significant number of their clients. This is a whitelabeled service that can be customized to meet a customer's needs and allow PFL to act as a middle-man to capture address data and facilitate the send of direct mail. </p>
                         </div>
                     </div>
                 </div>
@@ -300,7 +300,7 @@ const Work = () => {
                                 <span className="m-1 badge text-bg-purple text-white">Azure Functions</span>
                                 <span className="m-1 badge text-bg-purple text-white">Rest API</span>
                             </div>
-                            <p className="pb-3 mb-2 mb-md-3">Malesuada eu cursus natoque purus ipsum nunc, velit cras tellus. Maecenas viverra pellentesque at ultrices purus vitae quis erat volutpat. Turpis auctor neque bibendum id pellentesque ut egestas. Donec ut faucibus nisl nec at purus. Cursus vel gravida gravida purus varius feugiat.Semper mauris id adipiscing est. Nam leo rutrum gravida curabitur at vel risus.</p>
+                            <p className="pb-3 mb-2 mb-md-3">The Hotdogger is a personal project I created to promote an event I help run every year in the desert of Western Colorado. The Hotdogger is a biathlon mountain biking and hotdog eating competition where teams of up to 6 people compete to bike as many laps and eat as many hotdogs as they can. This project involved both creating a frontend to promote the event and provide instructions to attendees on how to participate, but also a team management system that allows users to register for the event and manage their team.</p>
                             <a href="https://www.hotdogger.org/Home" target={"_blank"} className="btn btn-dark text-white px-3">View Project</a>
                         </div>
                     </div>
@@ -311,8 +311,8 @@ const Work = () => {
                     <div class="row align-items-center">
                         <div class="col-xl-4 col-md-5 offset-lg-1">
                             <div class="pt-5 pb-3 pb-md-5 px-4 px-lg-0 text-center text-md-start">
-                                <p>Want to chat about a new or existing project?</p>
-                                <h2 class="h1 pb-3 pb-sm-4 fw-bold">Take your project to the next level</h2>
+                                <p>Want to chat about a new or existing challenge?</p>
+                                <h2 class="h1 pb-3 pb-sm-4 fw-bold">I can help <span className="text-purple">elevate</span> your digital strategy</h2>
                                 <button onClick={() => navigate('/Contact')} class="btn btn-purple text-white btn-lg">Contact Me</button>
                             </div>
                         </div>
