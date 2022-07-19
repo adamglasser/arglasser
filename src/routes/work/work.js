@@ -4,26 +4,26 @@ import { Pagination } from "swiper";
 
 import './styles/work.scss'
 
-import Computer from './gen-assets/3d-Computer.png'
+import Computer from './gen-assets/3d-Computer-min.png'
 
-import Audience from './nimbl/nimbl-audience.PNG'
-import Email from './nimbl/nimbl-email.PNG'
-import Page from './nimbl/nimbl-page.PNG'
-import Gift from './nimbl/nimbl-gift.PNG'
-import Review from './nimbl/nimbl-review.PNG'
+import Audience from './nimbl/nimbl-audience-min.PNG'
+import Email from './nimbl/nimbl-email-min.PNG'
+import Page from './nimbl/nimbl-page-min.PNG'
+import Gift from './nimbl/nimbl-gift-min.PNG'
+import Review from './nimbl/nimbl-review-min.PNG'
 
-import ViasatLogin from './viasat/Viasat-Login.PNG'
-import ViasatLookup from './viasat/Viasat-Lookup.PNG'
-import ViasatReporting from './viasat/Viasat-Reporting.PNG'
+import ViasatLogin from './viasat/Viasat-Login-min.PNG'
+import ViasatLookup from './viasat/Viasat-Lookup-min.PNG'
+import ViasatReporting from './viasat/Viasat-Reporting-min.PNG'
 
-import PacSfdc from './preferred-address/Preferred-Address-Capture.PNG'
-import PacZoom from './preferred-address/Preferred-Address-Capture-Zoom.PNG'
-import PacMsoft from './preferred-address/Preferred-Address-Capture-Microsoft.PNG'
+import PacSfdc from './preferred-address/Preferred-Address-Capture-min.PNG'
+import PacZoom from './preferred-address/Preferred-Address-Capture-Zoom-min.PNG'
+import PacMsoft from './preferred-address/Preferred-Address-Capture-Microsoft-min.PNG'
 
-import HotdoggerHome from './hotdogger/Hotdogger-Home.PNG'
-import HotdoggerOverview from './hotdogger/Hotdogger-Overview.PNG'
-import HotdoggerTeam from './hotdogger/Hotdogger-Team.PNG'
-import HotdoggerManagement from './hotdogger/Hotdogger-Management.PNG'
+import HotdoggerHome from './hotdogger/Hotdogger-Home-min.PNG'
+import HotdoggerOverview from './hotdogger/Hotdogger-Overview-min.PNG'
+import HotdoggerTeam from './hotdogger/Hotdogger-Team-min.PNG'
+import HotdoggerManagement from './hotdogger/Hotdogger-Management-min.PNG'
 
 import Header from "../../components/header/header";
 import { useEffect } from "react";

@@ -14,10 +14,10 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper";
 
-import Adam from './assets/adam.jpg'
-import AdamBike from './assets/adam-bike.jpg'
-import AdamHike from './assets/adam-hike.PNG'
-import AdamBoard from './assets/adam-board.jpg'
+import Adam from './assets/adam-min.jpg'
+import AdamBike from './assets/adam-bike-min.jpg'
+import AdamHike from './assets/adam-hike-min.PNG'
+import AdamBoard from './assets/adam-board-min.jpg'
 import './styles/About.scss'
 
 import ReactLogo from './assets/react-logo.png'
@@ -25,14 +25,14 @@ import TsLogo from './assets/ts-logo.png'
 import GqlLogo from './assets/gql-logo.png'
 import AzureLogo from './assets/azure-logo.png'
 
-import Chart from './assets/3dChart.png'
-import Computer from './assets/3dComputer.png'
-import Task from './assets/3dTask.png'
-import Folder from './assets/3dFolder.png'
+import Chart from './assets/3dChart-min.png'
+import Computer from './assets/3dComputer-min.png'
+import Task from './assets/3dTask-min.png'
+import Folder from './assets/3dFolder-min.png'
 
-import Pie from './assets/Diagram.png'
-import Magnifier from './assets/Magnifier.png'
-import ComputerAlt from './assets/Computer.png'
+import Pie from './assets/Diagram-min.png'
+import Magnifier from './assets/Magnifier-min.png'
+import ComputerAlt from './assets/Computer-min.png'
 import { useNavigate } from 'react-router-dom';
 
 
