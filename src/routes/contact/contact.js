@@ -24,6 +24,7 @@ const Contact = () => {
     const onFormSubmit = (e) => {
         e.preventDefault();
         setButtonDisabled(true);
+        onVerify();
         if (formEl.current.checkValidity()) {
             setRefreshReCaptcha(r => !r);
 
