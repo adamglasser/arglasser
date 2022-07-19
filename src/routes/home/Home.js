@@ -24,8 +24,8 @@ const MainSlice = () => {
                             </h3>
 
                             <div className="d-md-flex align-items-md-start mt-5">
-                                <div onClick={() => navigate('/contact')} className="fs-4 btn btn-lg btn-purple fw-bold text-white rounded-0 flex-shrink-0 me-md-4 mb-md-0 mb-sm-4 mb-3">Get In Touch</div>
-                                <div onClick={() => navigate('/contact')} className="fs-4 btn btn-white btn-lg rounded-0 text-light ms-2 ms-md-4 mb-md-0 mb-sm-4 mb-3 fw-bold">Work</div>
+                                <div onClick={() => navigate('/Contact')} className="fs-4 btn btn-lg btn-purple fw-bold text-white rounded-0 flex-shrink-0 me-md-4 mb-md-0 mb-sm-4 mb-3">Get In Touch</div>
+                                <div onClick={() => navigate('/Work')} className="fs-4 btn btn-white btn-lg rounded-0 text-light ms-2 ms-md-4 mb-md-0 mb-sm-4 mb-3 fw-bold">Work</div>
                             </div>
                         </div>
 

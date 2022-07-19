@@ -26,10 +26,17 @@ import HotdoggerTeam from './hotdogger/Hotdogger-Team.PNG'
 import HotdoggerManagement from './hotdogger/Hotdogger-Management.PNG'
 
 import Header from "../../components/header/header";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Work = () => {
+    useEffect(() => {
+        window.scrollTo(0,0)
+    },[])
+
+    const navigate = useNavigate()
     return (
-        <>
+        <div>
             <Header textClassName={'dark-nav-link'} />
             <div className="spacer my-5"></div>
             <section className="container align-items-center justify-content-between">
@@ -306,7 +313,7 @@ const Work = () => {
                             <div class="pt-5 pb-3 pb-md-5 px-4 px-lg-0 text-center text-md-start">
                                 <p>Want to chat about a new or existing project?</p>
                                 <h2 class="h1 pb-3 pb-sm-4 fw-bold">Take your project to the next level</h2>
-                                <a href="#" class="btn btn-purple text-white btn-lg">Contact Me</a>
+                                <button onClick={() => navigate('/Contact')} class="btn btn-purple text-white btn-lg">Contact Me</button>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-7 offset-xl-1">
@@ -318,7 +325,7 @@ const Work = () => {
                     </div>
                 </div>
             </section>
-        </>
+        </div>
     )
 }
 
