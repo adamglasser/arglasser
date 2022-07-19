@@ -160,7 +160,7 @@ const Resume = () => {
                     </div>
                 </div>
                 {/** Download */}
-                <a href="https://arglasser.blob.core.windows.net/public/AG%20-%20Resume.pdf" download="Adam Glasser Resume" className="mt-3 ms-md-4 btn btn-primary">Download Resume</a>
+                <a href="https://arglasser.azureedge.net/public/AG%20-%20Resume.pdf" download="Adam Glasser Resume" className="mt-3 ms-md-4 btn btn-primary">Download Resume</a>
             </div>
         </>
     )
