@@ -5,7 +5,6 @@ import Header from "../../components/header/header";
 
 import toast from 'react-hot-toast'
 
-
 import './styles/contact.scss'
 
 const Contact = () => {
@@ -67,14 +66,13 @@ const Contact = () => {
                     setToken(token);
                 }}
             />
-            <div id="contact-wave"></div>
-            <div className="bg-light d-flex flex-column" style={{ minHeight: '100vh' }}>
+            <div className="contact-blobs d-flex flex-column" style={{ minHeight: '100vh' }}>
                 <div>
                     <Header textClassName={'dark-nav-link'} />
                 </div>
                 <div className="my-auto container p-4 pb-5">
                     <div className="row">
-                        <div className="col-md mb-4 d-flex">
+                        <div className="col-lg mb-4 d-flex">
                             <div className="my-auto">
                                 <h1 className="d-flex display-2 text-black">
                                     Hey There <div>👋</div>
@@ -101,7 +99,7 @@ const Contact = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md h-100">
+                        <div className="col-lg h-100">
                             <div className="card border-light shadow-lg py-3 p-sm-4 p-md-5">
                                 <div className="bg-dark position-absolute top-0 start-0 w-100 h-100 rounded-3 d-none d-dark-mode-block"></div>
                                 <div className="card-body position-relative zindex-2">

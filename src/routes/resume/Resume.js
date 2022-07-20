@@ -40,7 +40,7 @@ const Resume = () => {
                                 and delivered automated solutions to integrate disparate platforms/data
                                 sources with PFL technologies to meet customer needs within tight timelines.
                             </p>
-                            <ul className="text-muted">
+                            <ul className="text-muted px-4">
                                 <li className="my-3">
                                     Technically architected/developed and visually designed a
                                     typescript/node application using a custom Graph QL API which
@@ -87,7 +87,7 @@ const Resume = () => {
                             </div>
                         </div>
                         <div className="row">
-                            <ul className="text-muted">
+                            <ul className="text-muted px-4">
                                 <li className="my-3">
                                     Drove increased customer satisfaction/retention across the largest
                                     customer segment.

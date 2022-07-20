@@ -1,7 +1,12 @@
 .nav-link {
     color: black;
     &:hover{
-        color: #22bbee;
+        color: #22bbee !important;
     }
 }
 
+.contact-blobs {
+    background-image: url('../assets/blobs.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
