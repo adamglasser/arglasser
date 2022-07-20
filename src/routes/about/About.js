@@ -42,7 +42,7 @@ const About = () => {
     // run this function from an event handler or an effect to execute scroll 
     return (
         <>
-            <div className='bg-white d-flex flex-column' style={{ minHeight: '100vh' }}>
+            <div className='d-flex flex-column' style={{ minHeight: '100vh' }}>
                 <Header textClassName={'dark-nav-link'} />
                 <div class="container justify-content-center flex-grow-1 row mx-auto w-100 my-auto justify-content-md-start justify-content-center">
                     <div class="col d-flex p-5">
@@ -74,7 +74,7 @@ const About = () => {
             </div>
             <div className='bg-white about-slice-1 text-black p-lg-5'>
                 <div ref={startAbout} className="container position-relative zindex-5 py-5">
-                    <div className="row bg-purple-light p-5 rounded text-muted">
+                    <div className="row bg-purple-light m-3 p-5 rounded text-muted">
                         <div className="col-lg-8">
 
                             <h1 className="pb-2 pb-md-3 fw-bold text-dark">About Me</h1>
@@ -91,7 +91,7 @@ const About = () => {
                                 </div>
                                 <div className="col">
                                     <img width={80} alt="pie" src={Pie} />
-                                    <p className="mb-0"><strong>Marketing</strong> {`+`} Analytics</p>
+                                    <p className="mb-0"><strong>Data</strong> Analytics</p>
                                 </div>
                             </div>
                         </div>
@@ -173,11 +173,11 @@ const About = () => {
                         </Swiper>
                     </div>
                     <div class="container col-xxl-8 px-4 py-5">
-                        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                        <div class="row w-100 mx-auto flex-lg-row-reverse align-items-center g-5 py-5">
                             <div class="col-10 col-sm-8 col-lg-6">
                                 <img src={Folder} class="d-block mx-lg-auto img-fluid" alt="Folder" loading="lazy" width="700" height="500" />
                             </div>
-                            <div class="col-lg-6 text-dark">
+                            <div class="col-lg-6 text-dark bg-purple-light p-5 rounded ">
                                 <h1 class="display-5 fw-bold lh-1 mb-3 text-black">My Work</h1>
                                 <p class="lead">Click the link below to take a look at my portfolio where I highlight a few projects I've recently completed. I have experience working on a wide variety of projects using a number of different tools and technologies. I pride myself on my ability to select the right tool, or tech stack, for the job.</p>
                                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
