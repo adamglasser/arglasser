@@ -25,8 +25,8 @@ const Contact = () => {
         e.preventDefault();
         setButtonDisabled(true);
         onVerify();
+        setRefreshReCaptcha(r => !r);
         if (formEl.current.checkValidity()) {
-            setRefreshReCaptcha(r => !r);
 
             axios.post('https://prod-86.westus.logic.azure.com:443/workflows/64cb43df8dff4de384be60e25743b581/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=ZDXPnUuCdbIKYqG_-9twqjn8m77LMEkOkfl8_oIuH74', {
                 token: token,
