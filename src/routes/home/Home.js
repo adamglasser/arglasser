@@ -1,15 +1,17 @@
 import { useNavigate } from "react-router-dom";
 import Blobs from './assets/Waihou-min.png'
+import NavBar from "../../components/NavBars/TransparentNav";
 
 const Home = () => {
     const navigate = useNavigate();
     return (
         <>
-            <div class="bg-neutral-900 h-screen w-screen flex items-center" style={{ overflow: 'hidden', backgroundImage: `url(${Blobs})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'bottom' }}>
-                <div class="w-full">
-                    <div class="max-w-xl lg:max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8 items-center bg-neutral-900 sm:rounded-xl ">
+        <NavBar />
+            <div className="bg-neutral-900 h-screen w-full flex items-center" style={{ minHeight: 600, overflowX: 'hidden', backgroundImage: `url(${Blobs})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'bottom' }}>
+                <div className="w-full">
+                    <div className="max-w-xl lg:max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8 items-center bg-neutral-900 sm:rounded-xl ">
 
-                        <div class="max-w-3xl text-left">
+                        <div className="max-w-3xl text-left">
                             <h1 className="block font-bold text-5xl md:text-6xl lg:text-7xl text-slate-200">
                                 Adam Glasser
                             </h1>
@@ -23,32 +25,32 @@ const Home = () => {
                         </div>
 
                         <div
-                            class="group relative inline-block focus:outline-none focus:ring-slate-200"
+                            className="group relative inline-block focus:outline-none focus:ring-slate-200"
                             style={{ cursor: 'pointer' }}
                             onClick={() => navigate('/Contact')}
                         >
                             <span
-                                class="absolute inset-0 translate-x-0 translate-y-0 bg-neutral-600 transition-transform group-hover:translate-y-1.5 group-hover:translate-x-1.5"
+                                className="absolute inset-0 translate-x-0 translate-y-0 bg-neutral-600 transition-transform group-hover:translate-y-1.5 group-hover:translate-x-1.5"
                             ></span>
 
                             <span
-                                class="relative inline-block border-2 border-slate-200 px-8 py-3 text-sm font-bold uppercase tracking-widest text-slate-200"
+                                className="relative inline-block border-2 border-slate-200 px-8 py-3 text-sm font-bold uppercase tracking-widest text-slate-200"
                             >
                                 Get In Touch
                             </span>
                         </div>
                         <div
-                            class="ms-5 group relative inline-block focus:outline-none focus:ring-slate-200"
+                            className="ms-5 group relative inline-block focus:outline-none focus:ring-slate-200"
                             onClick={() => navigate('/Work')}
                             style={{ cursor: 'pointer' }}
                         >
 
                             <span
-                                class="relative inline-block border-2 border-slate-200 px-8 py-3 text-sm font-bold uppercase tracking-widest text-slate-200 flex"
+                                className="relative inline-block border-2 border-slate-200 px-8 py-3 text-sm font-bold uppercase tracking-widest text-slate-200 flex"
                             >
                                 Work
                                 <svg
-                                    class="ms-2 h-5 w-5 rtl:rotate-180"
+                                    className="ms-2 h-5 w-5 rtl:rotate-180"
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
                                     viewBox="0 0 24 24"

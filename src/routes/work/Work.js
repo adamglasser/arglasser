@@ -2,7 +2,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 
-import './styles/work.scss'
+import NavBar from "../../components/NavBars/NavBar";
+import Hero from "./Hero";
 
 import Computer from './gen-assets/3d-Computer-min.png'
 
@@ -35,6 +36,10 @@ const Work = () => {
 
     const navigate = useNavigate()
     return (
+        <>
+            <NavBar />
+            <Hero />
+            {/**
         <div>
             <div className="spacer my-5"></div>
             <section className="container align-items-center justify-content-between">
@@ -42,7 +47,7 @@ const Work = () => {
                 <p className="text-muted">Take a look at some of my previous work below</p>
             </section>
             <section className="container pb-2 pb-lg-3">
-                {/** Nimbl */}
+                
                 <div className="row mb-md-4 mb-lg-5">
                     <div className="col-lg-5 pb-1 mb-3 pb-md-0 mb-md-0">
                         <div className='d-flex flex-column h-100'>
@@ -118,7 +123,7 @@ const Work = () => {
                     </div>
                 </div>
 
-                {/** Viasat */}
+                
                 <div className="row mb-md-4 mb-lg-5">
                     <div className="order-md-1 col-lg-5 pb-1 mb-3 pb-md-0 mb-md-0">
                         <div className='d-flex flex-column h-100'>
@@ -179,7 +184,7 @@ const Work = () => {
                     </div>
                 </div>
 
-                {/** PAC */}
+                
                 <div className="row mb-md-4 mb-lg-5">
                     <div className="col-lg-5 pb-1 mb-3 pb-md-0 mb-md-0">
                         <div className='d-flex flex-column h-100'>
@@ -239,7 +244,7 @@ const Work = () => {
                     </div>
                 </div>
 
-                {/** Hotdogger */}
+                
                 <div className="row mb-md-4 mb-lg-5">
                     <div className="order-md-1 col-lg-5 pb-1 mb-3 pb-md-0 mb-md-0">
                         <div className='d-flex flex-column h-100'>
@@ -304,26 +309,28 @@ const Work = () => {
                     </div>
                 </div>
             </section>
-            <section class="container mb-1 mb-md-3 mb-lg-4">
-                <div class="bg-purple-light rounded-3 overflow-hidden">
-                    <div class="row align-items-center">
-                        <div class="col-xl-4 col-md-5 offset-lg-1">
-                            <div class="pt-5 pb-3 pb-md-5 px-4 px-lg-0 text-center text-md-start">
+            <section className="container mb-1 mb-md-3 mb-lg-4">
+                <div className="bg-purple-light rounded-3 overflow-hidden">
+                    <div className="row align-items-center">
+                        <div className="col-xl-4 col-md-5 offset-lg-1">
+                            <div className="pt-5 pb-3 pb-md-5 px-4 px-lg-0 text-center text-md-start">
                                 <p>Want to chat about a new or existing challenge?</p>
-                                <h2 class="h1 pb-3 pb-sm-4 fw-bold">I can help <span className="text-purple">elevate</span> your digital strategy</h2>
-                                <button onClick={() => navigate('/Contact')} class="btn btn-purple text-white btn-lg">Contact Me</button>
+                                <h2 className="h1 pb-3 pb-sm-4 fw-bold">I can help <span className="text-purple">elevate</span> your digital strategy</h2>
+                                <button onClick={() => navigate('/Contact')} className="btn btn-purple text-white btn-lg">Contact Me</button>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-7 offset-xl-1">
-                            <div class="position-relative d-flex flex-column align-items-center justify-content-center h-100">
-                                <svg class="d-none d-md-block position-absolute top-50 start-0 translate-middle-y" width="868" height="868" viewBox="0 0 868 868" fill="none" xmlns="http://www.w3.org/2000/svg"><circle opacity="0.15" cx="434" cy="434" r="434" fill="#6366F1"></circle></svg>
-                                <img src={Computer} class="border border-0 position-relative zindex-3 mb-2 my-lg-4" alt="Illustration" width="382" />
+                        <div className="col-lg-6 col-md-7 offset-xl-1">
+                            <div className="position-relative d-flex flex-column align-items-center justify-content-center h-100">
+                                <svg className="d-none d-md-block position-absolute top-50 start-0 translate-middle-y" width="868" height="868" viewBox="0 0 868 868" fill="none" xmlns="http://www.w3.org/2000/svg"><circle opacity="0.15" cx="434" cy="434" r="434" fill="#6366F1"></circle></svg>
+                                <img src={Computer} className="border border-0 position-relative zindex-3 mb-2 my-lg-4" alt="Illustration" width="382" />
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
+    */}
+        </>
     )
 }
 

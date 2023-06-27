@@ -42,11 +42,11 @@ const About = () => {
     return (
         <>
             <div className='d-flex flex-column' style={{ minHeight: '100vh' }}>
-                <div class="container justify-content-center flex-grow-1 row mx-auto w-100 my-auto justify-content-md-start justify-content-center">
-                    <div class="col d-flex p-5">
+                <div className="container justify-content-center flex-grow-1 row mx-auto w-100 my-auto justify-content-md-start justify-content-center">
+                    <div className="col d-flex p-5">
                         <div className='my-auto'>
                             <h3 className='text-muted'>Hello, I'm</h3>
-                            <h1 class="display-2">
+                            <h1 className="display-2">
                                 Adam Glasser
                             </h1>
                             <h2 className='text-muted'>A solutions architect based in Bozeman, MT</h2>
@@ -55,15 +55,15 @@ const About = () => {
                             </button>
                         </div>
                     </div>
-                    <div class="col-lg-6 mt-xl-3 d-flex pb-5">
-                        <div class="row row-cols-2 gx-3 gx-lg-4 my-auto p-xxl-5">
-                            <div class="col pt-lg-5 mt-lg-1">
-                                <img src="https://arglasser.azureedge.net/public/adam-min.jpg" class="img-fluid  rounded-3 mb-3 mb-lg-4" alt="Image" />
-                                <img src="https://arglasser.azureedge.net/public/adam-bike-min.jpg" class="img-fluid  rounded-3" alt="Image" />
+                    <div className="col-lg-6 mt-xl-3 d-flex pb-5">
+                        <div className="row row-cols-2 gx-3 gx-lg-4 my-auto p-xxl-5">
+                            <div className="col pt-lg-5 mt-lg-1">
+                                <img src="https://arglasser.azureedge.net/public/adam-min.jpg" className="img-fluid  rounded-3 mb-3 mb-lg-4" alt="Image" />
+                                <img src="https://arglasser.azureedge.net/public/adam-bike-min.jpg" className="img-fluid  rounded-3" alt="Image" />
                             </div>
-                            <div class="col">
-                                <img src="https://arglasser.azureedge.net/public/adam-hike-min.PNG" class="img-fluid  rounded-3 mb-3 mb-lg-4" alt="Image" />
-                                <img src="https://arglasser.azureedge.net/public/adam-board-min.jpg" class="img-fluid  rounded-3" alt="Image" />
+                            <div className="col">
+                                <img src="https://arglasser.azureedge.net/public/adam-hike-min.PNG" className="img-fluid  rounded-3 mb-3 mb-lg-4" alt="Image" />
+                                <img src="https://arglasser.azureedge.net/public/adam-board-min.jpg" className="img-fluid  rounded-3" alt="Image" />
                             </div>
                         </div>
                     </div>
@@ -114,7 +114,7 @@ const About = () => {
                 </div>
             </div>
             <div className='bg-white text-black'>
-                <h2 class="h1 mb-4 text-center  fw-bold">How I can Help</h2>
+                <h2 className="h1 mb-4 text-center  fw-bold">How I can Help</h2>
                 <p className='col-10 text-center mx-auto'>I've created a wide range of digital solutions for customers including point solutions to integrate data</p>
                 <div className='d-flex flex-column h-100'>
                     <div className='container d-flex h-100'>
@@ -142,44 +142,44 @@ const About = () => {
 
                         >
                             <SwiperSlide>
-                                <div class="h-100 d-flex flex-column pb-3 col-11 mx-auto col-lg-12">
-                                    <div class="text-center m-4 d-flex justify-content-center align-items-center text-black card bg-white border-0 shadow p-4 rounded rounded-3 d-flex flex-grow-1 flex-column">
+                                <div className="h-100 d-flex flex-column pb-3 col-11 mx-auto col-lg-12">
+                                    <div className="text-center m-4 d-flex justify-content-center align-items-center text-black card bg-white border-0 shadow p-4 rounded rounded-3 d-flex flex-grow-1 flex-column">
                                         <img width="150" src={Computer} alt="computer" className='mb-3' />
-                                        <h4 class="mb-2 pb-1">Development </h4>
-                                        <p class="mx-auto" >Create anything from single page marketing forms to web based SAAS applications.</p>
+                                        <h4 className="mb-2 pb-1">Development </h4>
+                                        <p className="mx-auto" >Create anything from single page marketing forms to web based SAAS applications.</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div class="h-100 d-flex flex-column pb-3 col-11 mx-auto col-lg-12">
-                                    <div class="text-center m-4 d-flex justify-content-center align-items-center text-black card bg-white border-0 shadow p-4 rounded rounded-3 d-flex flex-grow-1 flex-column">
+                                <div className="h-100 d-flex flex-column pb-3 col-11 mx-auto col-lg-12">
+                                    <div className="text-center m-4 d-flex justify-content-center align-items-center text-black card bg-white border-0 shadow p-4 rounded rounded-3 d-flex flex-grow-1 flex-column">
                                         <img width="150" src={Task} alt="computer" className='mb-3' />
-                                        <h4 class="mb-2 pb-1">Process Automation</h4>
-                                        <p class="mx-auto" >Automate manual process and increase efficiencies across your workflow.</p>
+                                        <h4 className="mb-2 pb-1">Process Automation</h4>
+                                        <p className="mx-auto" >Automate manual process and increase efficiencies across your workflow.</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div class="h-100 d-flex flex-column pb-3 col-11 mx-auto col-lg-12">
-                                    <div class="text-center m-4 d-flex justify-content-center align-items-center text-black card bg-white border-0 shadow p-4 rounded rounded-3 d-flex flex-grow-1 flex-column">
+                                <div className="h-100 d-flex flex-column pb-3 col-11 mx-auto col-lg-12">
+                                    <div className="text-center m-4 d-flex justify-content-center align-items-center text-black card bg-white border-0 shadow p-4 rounded rounded-3 d-flex flex-grow-1 flex-column">
                                         <img width="150" src={Chart} alt="computer" className='mb-3' />
-                                        <h4 class="mb-2 pb-1">Analytics</h4>
-                                        <p class="mx-auto" >Gain new insight from your existing data, or help integrate disparate data sources into a single source of truth.</p>
+                                        <h4 className="mb-2 pb-1">Analytics</h4>
+                                        <p className="mx-auto" >Gain new insight from your existing data, or help integrate disparate data sources into a single source of truth.</p>
                                     </div>
                                 </div>
                             </SwiperSlide>
                         </Swiper>
                     </div>
-                    <div class="container col-xxl-8 px-4 py-5">
-                        <div class="row w-100 mx-auto flex-lg-row-reverse align-items-center g-5 py-5">
-                            <div class="col-10 col-sm-8 col-lg-6">
-                                <img src={Folder} class="d-block mx-lg-auto img-fluid" alt="Folder" loading="lazy" width="700" height="500" />
+                    <div className="container col-xxl-8 px-4 py-5">
+                        <div className="row w-100 mx-auto flex-lg-row-reverse align-items-center g-5 py-5">
+                            <div className="col-10 col-sm-8 col-lg-6">
+                                <img src={Folder} className="d-block mx-lg-auto img-fluid" alt="Folder" loading="lazy" width="700" height="500" />
                             </div>
-                            <div class="col-lg-6 text-dark bg-purple-light p-5 rounded ">
-                                <h1 class="display-5 fw-bold lh-1 mb-3 text-black">My Work</h1>
-                                <p class="lead">Click the link below to take a look at my portfolio where I highlight a few projects I've recently completed. I have experience working on a wide variety of projects using a number of different tools and technologies. I pride myself on my ability to select the right tool, or tech stack, for the job.</p>
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                                    <button type="button" class="mt-4 btn btn-purple text-white btn-lg px-4 me-md-2" onClick={() => navigate('/Work')}>Portfolio</button>
+                            <div className="col-lg-6 text-dark bg-purple-light p-5 rounded ">
+                                <h1 className="display-5 fw-bold lh-1 mb-3 text-black">My Work</h1>
+                                <p className="lead">Click the link below to take a look at my portfolio where I highlight a few projects I've recently completed. I have experience working on a wide variety of projects using a number of different tools and technologies. I pride myself on my ability to select the right tool, or tech stack, for the job.</p>
+                                <div className="d-grid gap-2 d-md-flex justify-content-md-start">
+                                    <button type="button" className="mt-4 btn btn-purple text-white btn-lg px-4 me-md-2" onClick={() => navigate('/Work')}>Portfolio</button>
                                 </div>
                             </div>
                         </div>
@@ -187,12 +187,12 @@ const About = () => {
                 </div>
             </div>
 
-            <section class="bg-white p-5">
-                <div class="card border-0 container ripple-container bg-black">
-                    <div class="card-body p-md-5 p-4 bg-size-cover ">
-                        <div class="py-md-5 py-4 text-center">
-                            <h3 class="h4 my-3 fw-normal text-white ">Want to work with me? Let{`'`}s talk</h3>
-                            <a href="mailto:hello@arglasser.com" class="fs-2 fw-bold text-light">hello@arglasser.com</a>
+            <section className="bg-white p-5">
+                <div className="card border-0 container ripple-container bg-black">
+                    <div className="card-body p-md-5 p-4 bg-size-cover ">
+                        <div className="py-md-5 py-4 text-center">
+                            <h3 className="h4 my-3 fw-normal text-white ">Want to work with me? Let{`'`}s talk</h3>
+                            <a href="mailto:hello@arglasser.com" className="fs-2 fw-bold text-light">hello@arglasser.com</a>
                         </div>
                     </div>
                 </div>
