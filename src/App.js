@@ -1,4 +1,5 @@
 
+import React, { useEffect } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 
 import { Toaster } from 'react-hot-toast';
@@ -10,10 +11,13 @@ import Work from "./routes/work/Work";
 import Resume from "./routes/resume/Resume";
 
 function App() {
+  useEffect(() => {
+    import('preline');
+  }, []);
   return (
     <div className="App">
       <Toaster />
-     <Routes>
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Work" element={<Work />} />
