@@ -1,7 +1,6 @@
 import { useCallback, useRef, useState } from "react";
 import axios from 'axios'
 import { GoogleReCaptchaProvider, GoogleReCaptcha } from 'react-google-recaptcha-v3';
-import Header from "../../components/header/header";
 
 import toast from 'react-hot-toast'
 
@@ -67,9 +66,6 @@ const Contact = () => {
                 }}
             />
             <div className="contact-blobs d-flex flex-column" style={{ minHeight: '100vh' }}>
-                <div>
-                    <Header textClassName={'dark-nav-link'} />
-                </div>
                 <div className="my-auto container p-4 pb-5">
                     <div className="row">
                         <div className="col-lg mb-4 d-flex">

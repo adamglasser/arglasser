@@ -1,10 +1,9 @@
-import Header from "../../components/header/header"
+
 
 
 const Resume = () => {
     return (
         <>
-            <Header textClassName={'dark-nav-link'} />
             <div className="container py-5">
                 {/** Name */}
                 <div className="row w-100 mx-auto g-md-5">

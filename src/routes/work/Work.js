@@ -25,7 +25,6 @@ import HotdoggerOverview from './hotdogger/Hotdogger-Overview-min.PNG'
 import HotdoggerTeam from './hotdogger/Hotdogger-Team-min.PNG'
 import HotdoggerManagement from './hotdogger/Hotdogger-Management-min.PNG'
 
-import Header from "../../components/header/header";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -37,7 +36,6 @@ const Work = () => {
     const navigate = useNavigate()
     return (
         <div>
-            <Header textClassName={'dark-nav-link'} />
             <div className="spacer my-5"></div>
             <section className="container align-items-center justify-content-between">
                 <h1 className="mb-sm-0 me-sm-3 fw-bold text-black display-3">Portfolio</h1>

@@ -1,7 +1,6 @@
 import { useRef } from 'react';
 
 
-import Header from '../../components/header/header';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -43,7 +42,6 @@ const About = () => {
     return (
         <>
             <div className='d-flex flex-column' style={{ minHeight: '100vh' }}>
-                <Header textClassName={'dark-nav-link'} />
                 <div class="container justify-content-center flex-grow-1 row mx-auto w-100 my-auto justify-content-md-start justify-content-center">
                     <div class="col d-flex p-5">
                         <div className='my-auto'>
