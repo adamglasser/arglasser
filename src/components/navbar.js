@@ -1,16 +1,17 @@
-import { Link, } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 
 const NavLink = ({ to, label, textClassName }) => (<>
-    <div style={{ cursor: 'pointer' }} className="font-medium text-gray-500 hover:text-gray-400 sm:py-6"><Link to={to} className={`${textClassName ? textClassName : ''} custom-nav-link py-2 px-0 px-lg-3 ht`}>{label}</Link></div>
+    <a href={to} className="font-medium text-gray-500 hover:text-gray-400 sm:py-6">{label}</a>
 </>)
 
 const NavBar = () => {
+    const navigate = useNavigate();
     return (
         <>
             <header class="absolute flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-transparent text-sm py-3 sm:py-0 ">
                 <nav class="relative max-w-7xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8" aria-label="Global">
                     <div class="flex items-center justify-between">
-                        <a class="flex-none text-xl font-semibold" href="#" aria-label="Brand">👨</a>
+                        <a class="flex-none text-xl font-semibold" href="/" aria-label="Brand">👨</a>
                         <div class="sm:hidden">
                             <button type="button" class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
                                 <svg class="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
