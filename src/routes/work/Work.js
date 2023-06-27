@@ -4,6 +4,7 @@ import { Pagination } from "swiper";
 
 import NavBar from "../../components/NavBars/NavBar";
 import Hero from "./Hero";
+import GalleryHolder from "./GalleryHolder";
 
 import Computer from './gen-assets/3d-Computer-min.png'
 
@@ -39,6 +40,7 @@ const Work = () => {
         <>
             <NavBar />
             <Hero />
+            <GalleryHolder />
             {/**
         <div>
             <div className="spacer my-5"></div>
