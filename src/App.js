@@ -9,6 +9,7 @@ import Contact from "./routes/contact/contact";
 import Home from "./routes/home/Home";
 import Work from "./routes/work/Work";
 import Resume from "./routes/resume/Resume";
+import NavBar from "./components/navbar";
 
 function App() {
   useEffect(() => {
@@ -16,6 +17,7 @@ function App() {
   }, []);
   return (
     <div className="App">
+      <NavBar />
       <Toaster />
       <Routes>
         <Route path="/" element={<Home />} />
