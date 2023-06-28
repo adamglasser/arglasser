@@ -2,9 +2,8 @@ import Computer from './gen-assets/3d-Computer-min.png'
 const ContactCta = () => {
     return (
         <>
-
-            <div class="relative overflow-hidden">
-                <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-24 bg-purple-200 rounded-xl mx-6 my-10">
+            <div class="relative overflow-hidden items-center px-6">
+                <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-24 bg-purple-200 rounded-xl my-10">
                     <div class="text-center px-6">
                         <h1 class="text-4xl sm:text-6xl font-bold text-neutral-800">
                             Contact

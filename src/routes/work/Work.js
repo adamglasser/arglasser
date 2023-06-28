@@ -1,13 +1,7 @@
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
-
 import NavBar from "../../components/NavBars/NavBar";
 import Hero from "./Hero";
 import {LeftGalleryHolder,RightGalleryHolder} from "./GalleryHolder";
 import ContactCta from "./ContactCta";
-
-import Computer from './gen-assets/3d-Computer-min.png'
 
 
 import Email from './nimbl/nimbl-email-min.PNG'

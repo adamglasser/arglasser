@@ -13,7 +13,8 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper";
 
-import './styles/About.scss'
+import NavBar from '../../components/NavBars/NavBar';
+import AboutLead from './AboutLead';
 
 import ReactLogo from './assets/react-logo.png'
 import TsLogo from './assets/ts-logo.png'
@@ -41,6 +42,8 @@ const About = () => {
     // run this function from an event handler or an effect to execute scroll 
     return (
         <>
+        <NavBar />
+        <AboutLead />
             <div className='d-flex flex-column' style={{ minHeight: '100vh' }}>
                 <div className="container justify-content-center flex-grow-1 row mx-auto w-100 my-auto justify-content-md-start justify-content-center">
                     <div className="col d-flex p-5">
