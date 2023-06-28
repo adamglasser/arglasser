@@ -809,6 +809,19 @@ video {
   height: 100vh;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.h-max {
+  height: -webkit-max-content;
+  height: max-content;
+}
+
+.min-h-full {
+  min-height: 100%;
+}
+
 .w-2 {
   width: 0.5rem;
 }

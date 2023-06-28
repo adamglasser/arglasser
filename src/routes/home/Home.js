@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <>
         <NavBar />
-            <div className="bg-neutral-900 h-screen w-full flex items-center" style={{ minHeight: 600, overflowX: 'hidden', backgroundImage: `url(${Blobs})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'bottom' }}>
+            <div className="bg-neutral-900 h-screen min-h-full w-full flex items-center" style={{ minHeight: 600, overflowX: 'hidden', backgroundImage: `url(${Blobs})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'bottom' }}>
                 <div className="w-full">
                     <div className="max-w-xl lg:max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8 items-center bg-neutral-900 sm:rounded-xl ">
 
