@@ -14,7 +14,7 @@ export const RightGalleryHolder = ({
     return (
         <>
 
-            <div style={{ padding: '1rem' }} class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 lg:mb-6">
+            <div style={{ padding: '1rem' }} class="max-w-[85rem] lg:my-8 mx-auto px-4 sm:px-6 lg:px-8 lg:mb-6">
                 <div class="grid lg:grid-cols-7 lg:gap-x-8 xl:gap-x-12 lg:items-center">
                     <div class="lg:col-span-3">
                         <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl lg:text-6xl pb-3 pt-6 lg:pt-3">{title}</h1>
@@ -79,7 +79,7 @@ export const LeftGalleryHolder = ({
     return (
         <>
 
-            <div style={{ padding: '1rem' }} class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 lg:mb-6">
+            <div style={{ padding: '1rem' }} class="max-w-[85rem] lg:my-8 mx-auto px-4 sm:px-6 lg:px-8 lg:mb-6">
                 <div class="grid lg:grid-cols-7 lg:gap-x-8 xl:gap-x-12 lg:items-center">
                     <div class="lg:col-span-3">
                         <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl lg:text-6xl pb-3 pt-6 lg:pt-3">{title}</h1>
