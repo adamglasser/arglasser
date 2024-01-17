@@ -13,7 +13,7 @@ const Hero = () => {
                     </div>
 
                     <div className="mt-5 max-w-3xl text-center mx-auto">
-                        <p className="text-lg text-gray-600">I have a wide variety of experience designing and implemnting impactful and engaging digital solutions for brands both large and small. Check out some of my previous work below!</p>
+                        <p className="text-lg text-gray-600">I have a wide variety of experience solving complex business challenges for clients of all sizes, you can check out some of my previous work below!</p>
                     </div>
 
                 </div>

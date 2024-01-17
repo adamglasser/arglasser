@@ -26,8 +26,8 @@ const NavBar = () => {
                         <div className="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:pl-7">
                             <NavLink to="/Work" label="Work" />
                             <NavLink to="/About" label="About" />
-                            <NavLink to="/Resume" label="Resume" />
-                            <NavLink to="/Contact" label="Contact" />
+                            <a href="https://docs.google.com/document/d/1jCVBOuMSMXk_H_InM8oOSMxjEbsedw-O6ZwQo8Tcxq4/edit?usp=share_link" target="blank" className="font-medium text-gray-500 hover:text-gray-400 sm:py-6">Resume</a>
+                            {/* <NavLink to="/Contact" label="Contact" /> */}
                         </div>
                     </div>
                 </nav>
