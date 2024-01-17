@@ -22,7 +22,7 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Work" element={<Work />} />
         <Route path="/Contact" element={<Contact />} />
-        <Route path="/Resume" element={<Resume />} />
+        {/* <Route path="/Resume" element={<Resume />} /> */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>

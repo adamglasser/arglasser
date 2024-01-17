@@ -27,17 +27,17 @@ const Home = () => {
                         <div
                             className="group relative inline-block focus:outline-none focus:ring-slate-200"
                             style={{ cursor: 'pointer' }}
-                            onClick={() => navigate('/Contact')}
                         >
                             <span
                                 className="absolute inset-0 translate-x-0 translate-y-0 bg-neutral-600 transition-transform group-hover:translate-y-1.5 group-hover:translate-x-1.5"
                             ></span>
-
+                            <a  href="mailto:aglasser7205@gmail.com">
                             <span
                                 className="relative inline-block border-2 border-slate-200 px-8 py-3 text-sm font-bold uppercase tracking-widest text-slate-200"
                             >
                                 Get In Touch
                             </span>
+                            </a>
                         </div>
                         <div
                             className="ms-5 group relative inline-block focus:outline-none focus:ring-slate-200"

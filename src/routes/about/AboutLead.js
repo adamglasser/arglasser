@@ -1,16 +1,13 @@
 const AboutLead = () => {
     return (
         <>
-            <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+            <div class="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
                 <div class="relative p-6 md:p-16">
 
                     <div class="relative z-10 lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center">
                         <div class="mb-10 lg:mb-0 lg:col-span-6 lg:col-start-8 lg:order-2">
                             <h2 class="text-2xl text-gray-800 font-bold sm:text-3xl">
-                                Hey there 👋
-                            </h2>
-                            <h2 class="text-2xl text-gray-800 font-bold sm:text-3xl mt-4">
-                                I'm <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500">Adam Glasser</span>, a solutions architect based in Bozeman, MT.
+                                Some things I can do:
                             </h2>
 
 
