@@ -15,6 +15,7 @@ import { Pagination } from "swiper";
 
 import NavBar from '../../components/NavBars/NavBar';
 import AboutLead from './AboutLead';
+import Me from './Me';
 
 import ReactLogo from './assets/react-logo.png'
 import TsLogo from './assets/ts-logo.png'
@@ -44,20 +45,13 @@ const About = () => {
         <>
         <NavBar />
         <AboutLead />
+        <Me />
+        
+        {/*}
+
+        
             <div className='d-flex flex-column' style={{ minHeight: '100vh' }}>
                 <div className="container justify-content-center flex-grow-1 row mx-auto w-100 my-auto justify-content-md-start justify-content-center">
-                    <div className="col d-flex p-5">
-                        <div className='my-auto'>
-                            <h3 className='text-muted'>Hello, I'm</h3>
-                            <h1 className="display-2">
-                                Adam Glasser
-                            </h1>
-                            <h2 className='text-muted'>A solutions architect based in Bozeman, MT</h2>
-                            <button onClick={executeScroll} className='btn btn-slate btn-lg mt-4 btn-lg fs-6'>
-                                More <i className="fa-solid fa-circle-arrow-down ms-2"></i>
-                            </button>
-                        </div>
-                    </div>
                     <div className="col-lg-6 mt-xl-3 d-flex pb-5">
                         <div className="row row-cols-2 gx-3 gx-lg-4 my-auto p-xxl-5">
                             <div className="col pt-lg-5 mt-lg-1">
@@ -199,7 +193,9 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>0
+                        */
+                        }
         </>
     )
 }
