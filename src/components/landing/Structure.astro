@@ -1,0 +1,29 @@
+---
+import About from "./About.astro";
+import Links from "./Links.astro";
+import Resume from "./Resume.astro";
+import Bulb from "./Bulb.astro";
+import Block from "./Block.astro";
+import WhyMe from "./WhyMe.astro";
+import SkillsCloud from "./SkillsCloud.astro";
+import LookingFor from "./LookingFor.astro"
+import PastWork from "./PastWork.astro"
+---
+
+<section>
+  <div class="p-4">
+    <div
+      class="grid grid-cols-1 gap-4 list-none lg:grid-cols-3 lg:grid-rows-3 xl:grid-cols-4 xl:grid-rows-4"
+    >
+    <About />
+    <Links />
+    <Block />
+      <Resume />
+      <SkillsCloud />
+      <Bulb />
+      <LookingFor />
+      <PastWork />
+      <WhyMe />
+    </div>
+  </div>
+</section>

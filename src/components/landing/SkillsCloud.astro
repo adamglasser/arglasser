@@ -1,0 +1,43 @@
+<script>
+    const mySkills = [
+        "Python",
+        "SQL",
+        "Microservices",
+        "Data Engineering",
+        "JS/Node",
+        "AWS",
+        "Azure",
+        "ETL",
+        "Bootstrap/Tailwind",
+        "Tableau",
+        "Data Analysis",
+        "Application Development",
+    ];
+
+    const skillElements = mySkills.map((skill) => {
+        const span = document.createElement("span");
+        span.className =
+            "m-1 whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-md text-purple-700";
+        span.textContent = skill;
+        return span;
+    });
+
+    // Now, you can append these elements to a container in your HTML, for example:
+    const container = document.getElementById("skillsContainer"); // Replace 'skillsContainer' with the actual ID of your container
+    skillElements.forEach((element) => {
+        container.appendChild(element);
+    });
+</script>
+
+<div
+    class="ring-1 lg:row-start-3 items-center h-full flex p-8 flex-row justify-center hover:ring-primary/5 dark:hover:ring-white/20 dark:ring-white/10 ring-primary/5 relative rounded-3xl overflow-hidden bg-white dark:bg-secondary shadow-xl dark:shadow-thick text-center"
+>
+    <div>
+        <p
+            class="text-xl tracking-tight font-medium text-primary dark:text-white md:text-6xl mt-6 mb-6"
+        >
+            Skills
+        </p>
+        <div id="skillsContainer" class="mx-auto flex flex-wrap w-80"></div>
+    </div>
+</div>
