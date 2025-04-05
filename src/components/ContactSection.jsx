@@ -30,7 +30,7 @@ export function ContactSection() {
                 href="mailto:adam@arglasser.com" 
                 className="inline-block group transition-all duration-300"
               >
-                <span className="block font-display text-4xl sm:text-5xl font-medium text-[var(--simulated-coral)] hover:text-[var(--acrylic-blue)] transition-colors">
+                <span className="block font-display text-4xl sm:text-5xl font-medium text-[var(--acrylic-blue)] ">
                   adam@arglasser.com
                 </span>
                 <div className="mt-2 text-sm text-[var(--mushroom-grey)] group-hover:text-[var(--synthetic-quartz)]">

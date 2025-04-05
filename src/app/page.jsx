@@ -11,7 +11,6 @@ import { Testimonial } from '@/components/Testimonial'
 import { TechScroller } from '@/components/TechScroller'
 import { GridPattern } from '@/components/GridPattern'
 import clsx from 'clsx'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
 
@@ -29,7 +28,7 @@ const technologies = [
 
 function Technologies() {
   return (
-    <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
+    <div className="hidden sm:block mt-24 rounded-4xl bg-[var(--volcanic-black)] py-20">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
@@ -167,7 +166,7 @@ function PersonalStatement({ children, className }) {
         <FadeIn>
           <figure className="mx-auto max-w-4xl relative">
             {/* Moved label to top with proper Simulated Coral color */}
-            <figcaption className="mb-6 text-sm uppercase tracking-wider text-[var(--simulated-coral)] font-semibold">
+            <figcaption className="mb-6 text-sm uppercase tracking-wider text-[var(--acrylic-blue)] font-semibold">
               My Philosophy
             </figcaption>
             
