@@ -11,7 +11,7 @@ function ContactContent() {
       <div className="flex flex-col justify-center">
         <Link
           href="mailto:adam@arglasser.com"
-          className="font-display text-4xl font-bold text-neutral-950 sm:text-5xl md:text-6xl hover:text-neutral-800 transition-colors"
+          className="font-display text-2xl font-bold text-neutral-950 sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl hover:text-neutral-800 transition-colors break-all sm:break-normal"
         >
           adam@arglasser.com
         </Link>

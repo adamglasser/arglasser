@@ -14,11 +14,15 @@ import { unifiedConditional } from 'unified-conditional'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
-  output: 'export',
-  distDir: 'dist',
-  images: {
-    unoptimized: true,
-  }
+  ...(process.env.NODE_ENV === 'production' ? {
+    output: 'export',
+    distDir: 'dist',
+    images: {
+      unoptimized: true,
+    }
+  } : {
+    // Use default Next.js development configuration
+  })
 }
 
 function remarkMDXLayout(source, metaName) {
