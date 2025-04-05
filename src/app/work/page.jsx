@@ -55,6 +55,7 @@ function CaseStudies({ caseStudies }) {
                     <Button
                       href={caseStudy.href}
                       aria-label={`Read case study: ${caseStudy.client}`}
+                      className="bg-[var(--coniferous-green)] text-white"
                     >
                       Read case study
                     </Button>
