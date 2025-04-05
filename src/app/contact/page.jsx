@@ -1,33 +1,33 @@
 import Link from 'next/link'
 
 import { Container } from '@/components/Container'
-import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { SocialMedia } from '@/components/SocialMedia'
-import { Border } from '@/components/Border'
 
 function ContactContent() {
   return (
-    <FadeIn>
-      <div className="flex flex-col items-center justify-center text-center">
-        <h2 className="font-display text-4xl font-bold text-neutral-950 sm:text-5xl md:text-6xl lg:text-7xl mb-6">
-          adam@arglasser.com
-        </h2>
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+      {/* Left column - Email */}
+      <div className="flex flex-col justify-center">
         <Link
           href="mailto:adam@arglasser.com"
-          className="inline-flex items-center justify-center rounded-full bg-neutral-950 px-6 py-3 text-base font-semibold text-white transition hover:bg-neutral-800 mb-16"
+          className="font-display text-4xl font-bold text-neutral-950 sm:text-5xl md:text-6xl hover:text-neutral-800 transition-colors"
         >
-          Send me an email
+          adam@arglasser.com
         </Link>
       </div>
 
-      <Border className="mt-16 pt-16">
-        <h2 className="font-display text-base font-semibold text-neutral-950">
+      {/* Right column - Connect */}
+      <div className="lg:border-l lg:border-neutral-200 lg:pl-16 flex flex-col justify-center">
+        <h2 className="font-display text-3xl font-semibold text-neutral-950 mb-6">
           Connect with me
         </h2>
-        <SocialMedia className="mt-6" />
-      </Border>
-    </FadeIn>
+        <SocialMedia className="mb-8" />
+        <p className="text-neutral-700">
+          I'm always interested in discussing new projects, creative ideas, or opportunities to be part of your vision.
+        </p>
+      </div>
+    </div>
   )
 }
 
@@ -39,11 +39,11 @@ export const metadata = {
 export default function Contact() {
   return (
     <>
-      <PageIntro eyebrow="Contact" title="Let's get in touch">
-        <p>I'd love to hear about your project and how I can help.</p>
+      <PageIntro eyebrow="Contact" title="Let's work together">
+        <p>I'm available for new opportunities and would love to hear about your project.</p>
       </PageIntro>
 
-      <Container className="mt-24 sm:mt-32 lg:mt-40">
+      <Container className="mt-16 sm:mt-24 lg:mt-32">
         <ContactContent />
       </Container>
     </>
