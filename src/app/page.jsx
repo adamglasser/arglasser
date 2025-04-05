@@ -9,6 +9,8 @@ import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
 import { TechScroller } from '@/components/TechScroller'
+import { GridPattern } from '@/components/GridPattern'
+import clsx from 'clsx'
 import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
@@ -146,6 +148,36 @@ function Skills() {
   )
 }
 
+function PersonalStatement({ children, className }) {
+  return (
+    <div
+      className={clsx(
+        'relative isolate bg-neutral-50 py-16 sm:py-28 md:py-32',
+        className,
+      )}
+    >
+      <GridPattern
+        className="absolute inset-0 -z-10 h-full w-full fill-neutral-100 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_50%,transparent_60%)]"
+        yOffset={-256}
+      />
+      <Container>
+        <FadeIn>
+          <figure className="mx-auto max-w-4xl">
+            <blockquote className="relative font-display text-3xl font-medium tracking-tight text-neutral-950 sm:text-4xl">
+              <p className={'before:content-["\\201C"] after:content-["\\201D"] sm:before:absolute sm:before:right-full'}>
+                {children}
+              </p>
+            </blockquote>
+            <figcaption className="mt-10 text-base text-neutral-600 font-semibold">
+              My Philosophy
+            </figcaption>
+          </figure>
+        </FadeIn>
+      </Container>
+    </div>
+  )
+}
+
 export const metadata = {
   description:
     'Adam Glasser - Customer Engineer, Solutions Architect, and technology expert.',
@@ -172,13 +204,10 @@ export default async function Home() {
 
       <Projects caseStudies={caseStudies} />
 
-      <Testimonial
-        className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Client', logo: logoPhobiaDark }}
-      >
-        Adam has an exceptional talent for understanding complex technical challenges and delivering 
-        elegant solutions that exceed expectations.
-      </Testimonial>
+      <PersonalStatement className="mt-24 sm:mt-32 lg:mt-40">
+        I believe in combining technical excellence with clear communication. My goal is to understand your business challenges
+        first, then craft solutions that deliver measurable value while being maintainable and scalable for the future.
+      </PersonalStatement>
 
       <Skills />
 
