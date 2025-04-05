@@ -80,32 +80,22 @@ function ArrowIcon(props) {
 
 function NewsletterForm() {
   return (
-    <form className="max-w-sm">
+    <div className="max-w-sm">
       <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
         Get in touch
       </h2>
       <p className="mt-4 text-sm text-neutral-700">
         Contact me to discuss how I can help solve your technical challenges.
       </p>
-      <div className="relative mt-6">
-        <input
-          type="email"
-          placeholder="Email address"
-          autoComplete="email"
-          aria-label="Email address"
-          className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pr-20 pl-6 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:ring-neutral-950/5 focus:outline-hidden"
-        />
-        <div className="absolute inset-y-1 right-1 flex justify-end">
-          <button
-            type="submit"
-            aria-label="Submit"
-            className="flex aspect-square h-full items-center justify-center rounded-xl bg-neutral-950 text-white transition hover:bg-neutral-800"
-          >
-            <ArrowIcon className="w-4" />
-          </button>
-        </div>
+      <div className="mt-6">
+        <Link
+          href="mailto:adam@arglasser.com"
+          className="font-display text-2xl font-bold text-neutral-950 hover:text-neutral-700 transition"
+        >
+          adam@arglasser.com
+        </Link>
       </div>
-    </form>
+    </div>
   )
 }
 
