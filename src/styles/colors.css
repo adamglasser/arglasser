@@ -1,0 +1,55 @@
+:root {
+  /* 
+   * PRIMARY COLOR PALETTE
+   * These are the main brand colors that should be used consistently across the application
+   */
+  --coniferous-green: #2D4B3E;  /* Primary brand color */
+  --coniferous-green-rgb: 45, 75, 62;
+  
+  --volcanic-black: #1A1A1A;  /* Primary background/text color */
+  --volcanic-black-rgb: 26, 26, 26;
+  
+  /* 
+   * SECONDARY COLOR PALETTE
+   * Supporting colors for various UI elements
+   */
+  --mushroom-grey: #9B9B93;  /* Secondary text, borders, subtle UI elements */
+  --mushroom-grey-rgb: 155, 155, 147;
+  --mushroom-grey-dark: #6D6D67;  /* Darker variant for increased contrast needs */
+  --mushroom-grey-dark-rgb: 109, 109, 103;
+  
+  /* 
+   * ACCENT COLOR PALETTE
+   * For highlights, buttons, interactive elements
+   */
+  --simulated-coral: #FF7066;  /* Primary accent - calls to action, highlights */
+  --simulated-coral-rgb: 255, 112, 102;
+  
+  --acrylic-blue: #A3CFFF;  /* Secondary accent - alternate highlights, special UI */
+  --acrylic-blue-rgb: 163, 207, 255;
+  
+  --synthetic-quartz: #E2E1DF;  /* Neutral accent - subtle highlights, backgrounds */
+  --synthetic-quartz-rgb: 226, 225, 223;
+  
+  /* 
+   * TEXT CONTRAST COMBINATIONS
+   * Predefined text colors to ensure proper contrast on various backgrounds
+   */
+  --text-on-green: #FFFFFF;  /* Text on primary brand color */
+  --text-on-green-rgb: 255, 255, 255;
+
+  --text-on-black: #FFFFFF;  /* Text on dark backgrounds */
+  --text-on-black-rgb: 255, 255, 255;
+
+  --text-on-grey: #1A1A1A;  /* Text on light grey */
+  --text-on-grey-rgb: 26, 26, 26;
+
+  --text-on-coral: #1A1A1A;  /* Text on accent coral */
+  --text-on-coral-rgb: 26, 26, 26;
+
+  --text-on-quartz: #1A1A1A;  /* Text on neutral accent */
+  --text-on-quartz-rgb: 26, 26, 26;
+
+  --text-on-blue: #1A1A1A;  /* Text on accent blue */
+  --text-on-blue-rgb: 26, 26, 26;
+} 

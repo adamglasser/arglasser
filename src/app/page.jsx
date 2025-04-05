@@ -61,28 +61,28 @@ function Projects({ caseStudies }) {
         <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {caseStudies.map((caseStudy) => (
             <FadeIn key={caseStudy.href} className="flex">
-              <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8">
+              <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-[var(--volcanic-black)]/5 transition hover:bg-[var(--synthetic-quartz)] sm:p-8">
                 <h3>
                   <Link href={caseStudy.href}>
                     <span className="absolute inset-0 rounded-3xl" />
                     
                   </Link>
                 </h3>
-                <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
+                <p className="mt-6 flex gap-x-2 text-sm text-[var(--volcanic-black)]">
                   <span
                     className="font-semibold"
                   >
                     {caseStudy.category || caseStudy.date}
                   </span>
-                  <span className="text-neutral-300" aria-hidden="true">
+                  <span className="text-[var(--mushroom-grey)]" aria-hidden="true">
                     /
                   </span>
                   <span>Project</span>
                 </p>
-                <p className="mt-6 font-display text-2xl font-semibold text-neutral-950">
+                <p className="mt-6 font-display text-2xl font-semibold text-[var(--coniferous-green)]">
                   {caseStudy.title}
                 </p>
-                <p className="mt-4 text-base text-neutral-600">
+                <p className="mt-4 text-base text-[var(--mushroom-grey-dark)]">
                   {caseStudy.description}
                 </p>
               </article>
@@ -146,25 +146,39 @@ function PersonalStatement({ children, className }) {
   return (
     <div
       className={clsx(
-        'relative isolate bg-neutral-50 py-16 sm:py-28 md:py-32',
+        'relative isolate bg-[var(--volcanic-black)] py-16 sm:py-28 md:py-32 overflow-hidden rounded-2xl border border-[var(--synthetic-quartz)]/10',
         className,
       )}
     >
+      {/* Subtle background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[var(--volcanic-black)] to-[var(--coniferous-green)]/20 opacity-80" />
+      
+      {/* Updated grid pattern with reduced opacity */}
       <GridPattern
-        className="absolute inset-0 -z-10 h-full w-full fill-neutral-100 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_50%,transparent_60%)]"
+        className="absolute inset-0 -z-10 h-full w-full fill-[rgba(var(--coniferous-green-rgb),0.05)] stroke-[rgba(var(--simulated-coral-rgb),0.1)] [mask-image:radial-gradient(ellipse_at_center,white_30%,transparent_80%)]"
         yOffset={-256}
       />
+      
+      {/* Subtle texture overlay */}
+      <div className="absolute inset-0 opacity-5 mix-blend-overlay" 
+           style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noiseFilter\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.65\' numOctaves=\'3\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noiseFilter)\'/%3E%3C/svg%3E")' }} />
+      
       <Container>
         <FadeIn>
-          <figure className="mx-auto max-w-4xl">
-            <blockquote className="relative font-display text-3xl font-medium tracking-tight text-neutral-950 sm:text-4xl">
+          <figure className="mx-auto max-w-4xl relative">
+            {/* Moved label to top with proper Simulated Coral color */}
+            <figcaption className="mb-6 text-sm uppercase tracking-wider text-[var(--simulated-coral)] font-semibold">
+              My Philosophy
+            </figcaption>
+            
+            <blockquote className="relative font-display text-3xl font-medium tracking-tight text-[var(--text-on-black)] sm:text-4xl">
               <p className={'before:content-["\\201C"] after:content-["\\201D"] sm:before:absolute sm:before:right-full'}>
                 {children}
               </p>
             </blockquote>
-            <figcaption className="mt-10 text-base text-neutral-600 font-semibold">
-              My Philosophy
-            </figcaption>
+            
+            {/* Added subtle accent line using Acrylic Blue */}
+            <div className="h-px w-24 mt-10 bg-[var(--acrylic-blue)] opacity-70" />
           </figure>
         </FadeIn>
       </Container>
@@ -184,10 +198,10 @@ export default async function Home() {
     <>
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
-          <h1 className="font-display text-5xl font-medium tracking-tight [text-wrap:balance] text-neutral-950 sm:text-7xl">
+          <h1 className="font-display text-5xl font-medium tracking-tight [text-wrap:balance] text-[var(--coniferous-green)] sm:text-7xl">
             Customer Engineer & Solutions Architect
           </h1>
-          <p className="mt-6 text-xl text-neutral-600">
+          <p className="mt-6 text-xl text-[var(--volcanic-black)]">
             I'm Adam Glasser, a technical professional specializing in creating impactful 
             data integrations, custom API solutions, and scalable technical systems that drive business results.
           </p>

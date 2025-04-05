@@ -43,15 +43,15 @@ function Navigation() {
       <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-3">
         {navigation.map((section, sectionIndex) => (
           <li key={sectionIndex}>
-            <div className="font-display text-sm font-semibold tracking-wider text-neutral-950">
+            <div className="font-display text-sm font-semibold tracking-wider text-[var(--volcanic-black)]">
               {section.title}
             </div>
-            <ul role="list" className="mt-4 text-sm text-neutral-700">
+            <ul role="list" className="mt-4 text-sm text-[var(--mushroom-grey-dark)]">
               {section.links.map((link, linkIndex) => (
                 <li key={linkIndex} className="mt-4">
                   <Link
                     href={link.href}
-                    className="transition hover:text-neutral-950"
+                    className="transition hover:text-[var(--coniferous-green)]"
                   >
                     {link.title}
                   </Link>
@@ -81,16 +81,16 @@ function ArrowIcon(props) {
 function NewsletterForm() {
   return (
     <div className="max-w-sm">
-      <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
+      <h2 className="font-display text-sm font-semibold tracking-wider text-[var(--volcanic-black)]">
         Get in touch
       </h2>
-      <p className="mt-4 text-sm text-neutral-700">
+      <p className="mt-4 text-sm text-[var(--mushroom-grey-dark)]">
         Contact me to discuss how I can help solve your technical challenges.
       </p>
       <div className="mt-6">
         <Link
           href="mailto:adam@arglasser.com"
-          className="font-display text-2xl font-bold text-neutral-950 hover:text-neutral-700 transition"
+          className="font-display text-2xl font-bold text-[var(--coniferous-green)] hover:text-[var(--simulated-coral)] transition"
         >
           adam@arglasser.com
         </Link>
@@ -109,11 +109,11 @@ export function Footer() {
             <NewsletterForm />
           </div>
         </div>
-        <div className="mt-24 mb-20 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
+        <div className="mt-24 mb-20 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-[rgba(var(--volcanic-black-rgb),0.1)] pt-12">
           <Link href="/" aria-label="Home">
             <Logo className="h-8" fillOnHover />
           </Link>
-          <p className="text-sm text-neutral-700">
+          <p className="text-sm text-[var(--mushroom-grey-dark)]">
             © Adam Glasser {new Date().getFullYear()}
           </p>
         </div>

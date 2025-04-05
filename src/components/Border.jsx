@@ -15,8 +15,8 @@ export function Border({
         className,
         'relative before:absolute after:absolute',
         invert
-          ? 'before:bg-white after:bg-white/10'
-          : 'before:bg-neutral-950 after:bg-neutral-950/10',
+          ? 'before:bg-[var(--text-on-black)] after:bg-[rgba(var(--text-on-black-rgb),0.1)]'
+          : 'before:bg-[var(--coniferous-green)] after:bg-[rgba(var(--mushroom-grey-rgb),0.3)]',
         position === 'top' &&
           'before:top-0 before:left-0 before:h-px before:w-6 after:top-0 after:right-0 after:left-8 after:h-px',
         position === 'left' &&

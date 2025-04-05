@@ -1,18 +1,18 @@
 .typography {
-  color: var(--color-neutral-950);
+  color: var(--volcanic-black);
   font-size: var(--text-xl);
   line-height: var(--text-xl--line-height);
 
-  --shiki-color-text: var(--color-white);
-  --shiki-color-background: var(--color-neutral-950);
-  --shiki-token-constant: var(--color-neutral-300);
-  --shiki-token-string: var(--color-neutral-400);
-  --shiki-token-comment: var(--color-neutral-500);
-  --shiki-token-keyword: var(--color-neutral-400);
-  --shiki-token-parameter: var(--color-neutral-400);
-  --shiki-token-function: var(--color-neutral-300);
-  --shiki-token-string-expression: var(--color-neutral-300);
-  --shiki-token-punctuation: var(--color-neutral-400);
+  --shiki-color-text: var(--text-on-black);
+  --shiki-color-background: var(--volcanic-black);
+  --shiki-token-constant: var(--synthetic-quartz);
+  --shiki-token-string: var(--mushroom-grey);
+  --shiki-token-comment: var(--mushroom-grey);
+  --shiki-token-keyword: var(--mushroom-grey);
+  --shiki-token-parameter: var(--mushroom-grey);
+  --shiki-token-function: var(--synthetic-quartz);
+  --shiki-token-string-expression: var(--synthetic-quartz);
+  --shiki-token-punctuation: var(--mushroom-grey);
 
   :where(.typography > *) {
     margin-top: --spacing(6);
@@ -61,7 +61,7 @@
   }
 
   :where(li)::marker {
-    color: var(--color-neutral-500);
+    color: var(--mushroom-grey);
   }
 
   :where(li > *),
@@ -88,14 +88,14 @@
 
   :where(thead th) {
     padding-bottom: --spacing(6);
-    border-bottom: 1px solid var(--color-neutral-950);
+    border-bottom: 1px solid var(--volcanic-black);
   }
 
   :where(td) {
     vertical-align: top;
     padding-top: --spacing(6);
     padding-bottom: --spacing(6);
-    border-bottom: 1px solid --theme(--color-neutral-950 / 0.1);
+    border-bottom: 1px solid rgba(var(--volcanic-black-rgb), 0.1);
   }
 
   :where(:is(th, td):not(:last-child)) {
@@ -105,7 +105,7 @@
   /* Code blocks */
   :where(pre) {
     display: flex;
-    background-color: var(--color-neutral-950);
+    background-color: var(--volcanic-black);
     border-radius: var(--radius-4xl);
     overflow-x: auto;
     margin-top: --spacing(10);
@@ -124,7 +124,7 @@
     padding: theme(padding.8) theme(padding.6);
     font-size: var(--text-base);
     line-height: theme(lineHeight.8);
-    color: var(--color-white);
+    color: var(--text-on-black);
 
     @media (width >= theme(--breakpoint-sm)) {
       padding: --spacing(10);
@@ -133,13 +133,14 @@
 
   /* <hr> */
   :where(hr) {
-    border-color: --theme(--color-neutral-950 / 0.1);
+    border-color: rgba(var(--volcanic-black-rgb), 0.1);
     margin-top: --spacing(24);
     margin-bottom: --spacing(24);
   }
 
   /* Inline text */
   :where(a) {
+    color: var(--coniferous-green);
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 0.15em;
