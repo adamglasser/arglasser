@@ -2,7 +2,7 @@
 
 A professional portfolio website for Adam Glasser, Customer Engineer & Solutions Architect, showcasing projects, experience, and expertise. Built with modern web technologies and a focus on responsive design.
 
-![Man Technologist](https://raw.githubusercontent.com/adamglasser/arglasser/main/public/man-technologist.svg)
+<img src="https://raw.githubusercontent.com/adamglasser/arglasser/main/public/man-technologist.svg" alt="Man Technologist" width="60">
 
 ## Overview
 
