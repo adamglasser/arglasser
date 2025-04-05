@@ -38,8 +38,8 @@ function EmailIcon(props) {
 }
 
 export const socialMediaProfiles = [
-  { title: 'LinkedIn', href: 'https://linkedin.com/in/adam-glasser', icon: LinkedInIcon },
-  { title: 'GitHub', href: 'https://github.com/adamglasser', icon: GitHubIcon },
+  { title: 'LinkedIn', target: '_blank', href: 'https://linkedin.com/in/adam-glasser', icon: LinkedInIcon },
+  { title: 'GitHub', target: '_blank', href: 'https://github.com/adamglasser', icon: GitHubIcon },
   { title: 'Email', href: 'mailto:adam@arglasser.com', icon: EmailIcon },
 ]
 
@@ -57,6 +57,7 @@ export function SocialMedia({ className, invert = false }) {
         <li key={socialMediaProfile.title}>
           <Link
             href={socialMediaProfile.href}
+            target={socialMediaProfile.target}
             aria-label={socialMediaProfile.title}
             className={clsx(
               'transition',
