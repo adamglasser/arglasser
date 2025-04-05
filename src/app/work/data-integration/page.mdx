@@ -1,0 +1,61 @@
+
+export const caseStudy = {
+  client: 'Enterprise Data Integration',
+  title: 'Building a Scalable ETL Framework',
+  description:
+    'Architected and developed a comprehensive ETL framework using AWS microservices, Python, and PostgreSQL to enhance data management capabilities and system scalability.',
+  summary: [
+    'Designed and implemented a robust ETL framework using AWS microservices, Python, and PostgreSQL that significantly enhanced data management capabilities.',
+    'Reduced technical onboarding time by 50% through automated data processing, validation, and integration with various third-party systems.',
+  ],
+  emoji: '📊',
+  category: 'Data Engineering',
+  service: 'Cloud Architecture',
+  testimonial: {
+    author: { name: 'Internal Feedback', role: 'Product Team' },
+    content:
+      'The ETL framework transformed our data management processes, making them more efficient and reliable. The solution continues to deliver substantial value through improved processing efficiency and enhanced pipeline reliability.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+In a rapidly growing fintech environment, managing the increasing volume of data flowing between various systems became a significant challenge. The existing processes were manual, error-prone, and couldn't scale with the business growth.
+
+I was tasked with designing and implementing a comprehensive ETL (Extract, Transform, Load) framework that could handle diverse data sources, ensure data integrity, and automate data processing workflows.
+
+## Technical Approach
+
+The solution I architected leveraged AWS services combined with Python and PostgreSQL to create a scalable, reliable data pipeline:
+
+1. **Serverless Architecture**: Utilized AWS Lambda functions to create a cost-effective, event-driven processing pipeline
+2. **Data Validation Engine**: Implemented comprehensive validation rules ensuring data quality and compliance
+3. **Workflow Orchestration**: Implemented state machines to manage complex and inter-dependent data processing workflows
+4. **Monitoring & Alerting**: Integrated Sentry for real-time system health monitoring
+
+## What I Delivered
+
+<TagList>
+  <TagListItem>Cloud Architecture (AWS)</TagListItem>
+  <TagListItem>Python Data Processing</TagListItem>
+  <TagListItem>PostgreSQL Optimization</TagListItem>
+  <TagListItem>API Integrations</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Internal Feedback', role: 'Product Team' }}
+>
+  The ETL framework transformed our data management processes, making them more efficient and reliable. The solution continues to deliver substantial value through improved processing efficiency and enhanced pipeline reliability.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="50%" label="Reduced onboarding time" />
+  <StatListItem value="99%" label="System reliability" />
+  <StatListItem value="Increased" label="Data processing capacity" />
+  <StatListItem value="Improved" label="Automated validation" />
+</StatList> 
