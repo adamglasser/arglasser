@@ -14,7 +14,14 @@ import { loadCaseStudies } from '@/lib/mdx'
 
 // Replace clients with skills/technologies
 const technologies = [
-  'Python', 'TypeScript', 'React', 'Node.js', 'Next.js', 'GraphQL', 'AWS', 'PostgreSQL'
+  { name: 'Python', icon: '/tech-icons/Python.svg' },
+  { name: 'TypeScript', icon: '/tech-icons/TypeScript.svg' },
+  { name: 'React', icon: '/tech-icons/React.svg' },
+  { name: 'Node.js', icon: '/tech-icons/Node.js.svg' },
+  { name: 'Next.js', icon: '/tech-icons/Next.js.svg' },
+  { name: 'GraphQL', icon: '/tech-icons/GraphQL.svg' },
+  { name: 'AWS', icon: '/tech-icons/AWS.svg' },
+  { name: 'PostgreSQL', icon: '/tech-icons/PostgresSQL.svg' }
 ]
 
 function Technologies() {
@@ -33,9 +40,18 @@ function Technologies() {
             className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
           >
             {technologies.map((tech) => (
-              <li key={tech}>
+              <li key={tech.name}>
                 <FadeIn>
-                  <div className="text-white font-display">{tech}</div>
+                  <div className="flex flex-col items-center space-y-3">
+                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white p-2">
+                      <img 
+                        src={tech.icon} 
+                        alt={tech.name} 
+                        className="h-10 w-10 object-contain"
+                      />
+                    </div>
+                    <div className="text-white font-display text-center">{tech.name}</div>
+                  </div>
                 </FadeIn>
               </li>
             ))}
