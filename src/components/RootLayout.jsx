@@ -56,19 +56,30 @@ function Header({
   return (
     <Container>
       <div className="flex items-center justify-between">
-        <Link
-          href="/"
-          aria-label="Home"
-          onMouseEnter={() => setLogoHovered(true)}
-          onMouseLeave={() => setLogoHovered(false)}
-        >
-
-          <Logo
-            className="hidden h-8 sm:block"
-            invert={invert}
-            filled={logoHovered}
-          />
-        </Link>
+        <div className="flex items-center gap-x-4">
+          <Link
+            href="/"
+            aria-label="Home"
+            className={clsx(
+              'text-2xl transition',
+              invert ? 'text-white hover:text-neutral-200' : 'text-neutral-950 hover:text-neutral-700'
+            )}
+          >
+            👨‍💻
+          </Link>
+          <Link
+            href="/"
+            aria-label="Home"
+            onMouseEnter={() => setLogoHovered(true)}
+            onMouseLeave={() => setLogoHovered(false)}
+          >
+            <Logo
+              className="hidden h-8 sm:block"
+              invert={invert}
+              filled={logoHovered}
+            />
+          </Link>
+        </div>
         <div className="flex items-center gap-x-8">
           <Button href="/contact" invert={false} className="bg-[var(--coniferous-green)] text-[var(--text-on-black)]">
             Contact me
@@ -126,12 +137,12 @@ function Navigation() {
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-[var(--text-on-black)]">
       <NavigationRow>
+        <NavigationItem href="/">Home</NavigationItem>
         <NavigationItem href="/work">Projects</NavigationItem>
-        <NavigationItem href="/about">About Me</NavigationItem>
       </NavigationRow>
       <NavigationRow>
+        <NavigationItem href="/about">About Me</NavigationItem>
         <NavigationItem href="/contact">Contact</NavigationItem>
-        
       </NavigationRow>
     </nav>
   )
