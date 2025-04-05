@@ -21,6 +21,9 @@ function ArrowIcon(props) {
 }
 
 function PageLink({ page }) {
+  // Check if it's a valid date format (YYYY-MM-DD)
+  const isDateFormat = page.date && /^\d{4}-\d{2}(-\d{2})?$/.test(page.date);
+  
   return (
     <article key={page.href}>
       <Border
@@ -30,12 +33,17 @@ function PageLink({ page }) {
         <h3 className="mt-6 text-base font-semibold text-neutral-950">
           {page.title}
         </h3>
-        <time
-          dateTime={page.date}
-          className="order-first text-sm text-neutral-600"
-        >
-          {formatDate(page.date)}
-        </time>
+        <p className="order-first text-sm text-neutral-600">
+          {page.category || (page.date && !isDateFormat ? page.date : null)}
+        </p>
+        {isDateFormat && (
+          <time
+            dateTime={page.date}
+            className="order-first text-sm text-neutral-600"
+          >
+            {formatDate(page.date)}
+          </time>
+        )}
         <p className="mt-2.5 text-base text-neutral-600">{page.description}</p>
         <Link
           href={page.href}

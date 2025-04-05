@@ -69,12 +69,11 @@ function Projects({ caseStudies }) {
                   </Link>
                 </h3>
                 <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
-                  <time
-                    dateTime={caseStudy.date.split('-')[0]}
+                  <span
                     className="font-semibold"
                   >
-                    {caseStudy.date.split('-')[0]}
-                  </time>
+                    {caseStudy.category || caseStudy.date}
+                  </span>
                   <span className="text-neutral-300" aria-hidden="true">
                     /
                   </span>

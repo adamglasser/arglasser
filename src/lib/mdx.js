@@ -16,7 +16,12 @@ async function loadEntries(directory, metaName) {
         },
       ),
     )
-  ).sort((a, b) => b.date.localeCompare(a.date))
+  ).sort((a, b) => {
+    // Use category if date is not available
+    const valueA = a.date || a.category || '';
+    const valueB = b.date || b.category || '';
+    return valueB.localeCompare(valueA);
+  })
 }
 
 export function loadArticles() {

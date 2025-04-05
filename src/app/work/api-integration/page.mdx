@@ -2,18 +2,17 @@ export const caseStudy = {
   client: 'Strategic HR Integration',
   title: 'Enabling Enterprise Growth Through API Integration',
   description:
-    'Designed and implemented a strategic integration with a major HR platform, enabling high-profile client onboarding and driving revenue growth.',
+    'Designed and implemented a strategic integration with a major HR platform, enabling a high-profile client onboarding and driving revenue growth.',
   summary: [
-    'Developed a seamless integration between systems using modern API architecture and data synchronization techniques.',
+    'Developed a webhook integration between an HR platform and benefits management system using AWS Lambda for data ingestion.',
     'Created a flexible and maintainable solution that supported complex enterprise requirements while ensuring data accuracy and compliance.',
   ],
   emoji: '🔄',
-  date: 'Systems Integration',
+  category: 'Systems Integration',
   service: 'API Development',
   testimonial: {
-    author: { name: 'Product Manager', role: 'Enterprise Client' },
-    content:
-      'The integration Adam built became a crucial part of our technical infrastructure. His ability to understand both the technical constraints and business requirements resulted in a solution that significantly improved our operational efficiency.',
+    author: { name: 'Internal Project Review', role: 'Impact Assessment' },
+    content: 'The webhook integration significantly expanded our platform capabilities, opening access to an entirely new market segment that was previously unreachable. The serverless architecture proved to be both cost-effective and highly reliable.',
   },
 }
 
@@ -24,9 +23,9 @@ export const metadata = {
 
 ## Overview
 
-A significant growth opportunity presented itself through a potential partnership with a major HR platform. However, this partnership required a robust, bidirectional integration to synchronize data between systems while maintaining strict security and compliance standards.
+A significant growth opportunity presented itself through a potential partnership with a major HR platform. However, this partnership required a robust, webhook-based integration to synchronize data between systems while maintaining strict security and compliance standards.
 
-I was tasked with designing and implementing this critical integration that would enable the onboarding of several high-profile enterprise clients.
+I was tasked with designing and implementing this critical integration that would enable the onboarding of a strategically important enterprise client.
 
 ## Technical Approach
 
@@ -34,32 +33,30 @@ I approached this challenge by:
 
 1. **Requirements Analysis**: Worked closely with stakeholders to understand complex business rules, data mapping requirements, and performance expectations
    
-2. **API Architecture**: Designed a flexible and maintainable API architecture using RESTful principles and GraphQL where appropriate
+2. **Webhook Architecture**: Designed a streamlined webhook-based integration that allowed Rippling to send data directly to Benepass
 
-3. **Data Transformation Layer**: Developed a sophisticated transformation layer to handle complex data mappings between disparate systems
+3. **AWS Lambda Processing**: Implemented serverless functions to efficiently process and ingest the incoming HR data
 
-4. **Security Implementation**: Implemented OAuth 2.0 authorization flows, data encryption, and comprehensive audit logging
-
-5. **Testing Strategy**: Created an extensive testing framework with unit tests, integration tests, and end-to-end validation scenarios
+4. **Testing Strategy**: Created an extensive testing framework with unit tests, integration tests, and end-to-end validation scenarios
 
 ## What I Delivered
 
 <TagList>
-  <TagListItem>API Architecture</TagListItem>
-  <TagListItem>Authentication & Security</TagListItem>
+  <TagListItem>Webhook Architecture</TagListItem>
+  <TagListItem>AWS Lambda Implementation</TagListItem>
   <TagListItem>Data Transformation</TagListItem>
   <TagListItem>Performance Optimization</TagListItem>
 </TagList>
 
 <Blockquote
-  author={{ name: 'Product Manager', role: 'Enterprise Client' }}
+  author={{ name: 'Internal Project Review', role: 'Impact Assessment' }}
 >
-  The integration Adam built became a crucial part of our technical infrastructure. His ability to understand both the technical constraints and business requirements resulted in a solution that significantly improved our operational efficiency.
+  The webhook integration significantly expanded our platform capabilities, opening access to an entirely new market segment that was previously unreachable. The serverless architecture proved to be both cost-effective and highly reliable.
 </Blockquote>
 
 <StatList>
   <StatListItem value="100%" label="Data accuracy" />
-  <StatListItem value="50+" label="Enterprise clients onboarded" />
-  <StatListItem value="30%" label="Reduced implementation time" />
+  <StatListItem value="Strategic" label="Enterprise client acquisition" />
+  <StatListItem value="2 weeks" label="From design to production" />
   <StatListItem value="24/7" label="System availability" />
 </StatList> 

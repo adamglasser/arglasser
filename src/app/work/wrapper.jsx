@@ -32,7 +32,7 @@ export default async function CaseStudyLayout({ caseStudy, children }) {
                     </div>
                     <div className="border-t border-neutral-200 px-6 py-4 first:border-t-0 sm:border-t-0 sm:border-l">
                       <dt className="font-semibold">Specialty</dt>
-                      <dd>{caseStudy.date}</dd>
+                      <dd>{caseStudy.category || caseStudy.date}</dd>
                     </div>
                     <div className="border-t border-neutral-200 px-6 py-4 first:border-t-0 sm:border-t-0 sm:border-l">
                       <dt className="font-semibold">Service</dt>

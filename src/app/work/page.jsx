@@ -38,7 +38,7 @@ function CaseStudies({ caseStudies }) {
                       {caseStudy.service}
                     </p>
                     <p className="text-sm text-neutral-950 lg:mt-2">
-                      {caseStudy.date}
+                      {caseStudy.category || caseStudy.date}
                     </p>
                   </div>
                 </div>
