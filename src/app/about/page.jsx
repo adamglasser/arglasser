@@ -58,7 +58,7 @@ function Experience() {
             <div className="lg:col-span-3">
               <div className="space-y-12">
                 <FadeIn>
-                  <div className="relative overflow-hidden rounded-3xl">
+                  <div id="benepass" className="relative overflow-hidden rounded-3xl">
                     <div className="px-6 py-8">
                       <h3 className="font-display text-xl font-semibold text-neutral-950">
                         Benepass | Customer Engineer
@@ -79,7 +79,7 @@ function Experience() {
                 </FadeIn>
 
                 <FadeIn>
-                  <div className="relative overflow-hidden rounded-3xl">
+                  <div id="pfl" className="relative overflow-hidden rounded-3xl">
                     <div className="px-6 py-8">
                       <h3 className="font-display text-xl font-semibold text-neutral-950">
                         PFL | Senior Solutions Architect
@@ -100,7 +100,7 @@ function Experience() {
                 </FadeIn>
 
                 <FadeIn>
-                  <div className="relative overflow-hidden rounded-3xl">
+                  <div id="marketo" className="relative overflow-hidden rounded-3xl">
                     <div className="px-6 py-8">
                       <h3 className="font-display text-xl font-semibold text-neutral-950">
                         Marketo | Customer Care Specialist

@@ -9,9 +9,9 @@ const navigation = [
   {
     title: 'Experience',
     links: [
-      { title: 'Benepass', href: '/about' },
-      { title: 'PFL', href: '/about' },
-      { title: 'Marketo', href: '/about' },
+      { title: 'Benepass', href: '/about#benepass' },
+      { title: 'PFL', href: '/about#pfl' },
+      { title: 'Marketo', href: '/about#marketo' },
       {
         title: (
           <>
