@@ -164,13 +164,6 @@ export default async function About() {
 
       <Experience />
 
-      <PageLinks
-        className="mt-24 sm:mt-32 lg:mt-40"
-        title="From the blog"
-        intro="I share insights on technical solutions, integration challenges, and industry trends."
-        pages={blogArticles}
-      />
-
       <ContactSection />
     </>
   )

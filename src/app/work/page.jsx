@@ -9,15 +9,6 @@ import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-dark.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-dark.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-dark.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-dark.svg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-dark.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-dark.svg'
-import logoPhobia from '@/images/clients/phobia/logo-dark.svg'
-import logoUnseal from '@/images/clients/unseal/logo-dark.svg'
-import { formatDate } from '@/lib/formatDate'
 import { loadCaseStudies } from '@/lib/mdx'
 
 function CaseStudies({ caseStudies }) {
@@ -35,13 +26,10 @@ function CaseStudies({ caseStudies }) {
               <Border className="grid grid-cols-3 gap-x-8 gap-y-8 pt-16">
                 <div className="col-span-full sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:col-span-1 lg:block">
                   <div className="sm:flex sm:items-center sm:gap-x-6 lg:block">
-                    <Image
-                      src={caseStudy.logo}
-                      alt=""
-                      className="h-16 w-16 flex-none"
-                      unoptimized
-                    />
-                    <h3 className="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
+                    <div className="text-5xl mb-4 sm:mb-0 sm:mr-4">
+                      {caseStudy.emoji || ''}
+                    </div>
+                    <h3 className="text-sm font-semibold text-neutral-950">
                       {caseStudy.client}
                     </h3>
                   </div>
@@ -50,9 +38,7 @@ function CaseStudies({ caseStudies }) {
                       {caseStudy.service}
                     </p>
                     <p className="text-sm text-neutral-950 lg:mt-2">
-                      <time dateTime={caseStudy.date}>
-                        {formatDate(caseStudy.date)}
-                      </time>
+                      {caseStudy.date}
                     </p>
                   </div>
                 </div>
@@ -91,50 +77,10 @@ function CaseStudies({ caseStudies }) {
   )
 }
 
-const clients = [
-  ['Phobia', logoPhobia],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
-]
-
-function Clients() {
-  return (
-    <Container className="mt-24 sm:mt-32 lg:mt-40">
-      <FadeIn>
-        <h2 className="font-display text-2xl font-semibold text-neutral-950">
-          You’re in good company
-        </h2>
-      </FadeIn>
-      <FadeInStagger className="mt-10" faster>
-        <Border as={FadeIn} />
-        <ul
-          role="list"
-          className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-4"
-        >
-          {clients.map(([client, logo]) => (
-            <li key={client} className="group">
-              <FadeIn className="overflow-hidden">
-                <Border className="pt-12 group-nth-[-n+2]:-mt-px sm:group-nth-3:-mt-px lg:group-nth-4:-mt-px">
-                  <Image src={logo} alt={client} unoptimized />
-                </Border>
-              </FadeIn>
-            </li>
-          ))}
-        </ul>
-      </FadeInStagger>
-    </Container>
-  )
-}
-
 export const metadata = {
-  title: 'Our Work',
+  title: 'My Work',
   description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+    'Showcasing my expertise in system architecture, API development, and enterprise integrations across cloud technologies.',
 }
 
 export default async function Work() {
@@ -143,13 +89,13 @@ export default async function Work() {
   return (
     <>
       <PageIntro
-        eyebrow="Our work"
-        title="Proven solutions for real-world problems."
+        eyebrow="My Work"
+        title="Technical solutions for complex business challenges."
       >
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+          I specialize in architecting and implementing scalable systems that bridge modern and legacy technologies.
+          My expertise spans from microservices and API development to cloud architecture and data integrations,
+          with a focus on delivering solutions that drive measurable business outcomes.
         </p>
       </PageIntro>
 
@@ -157,15 +103,67 @@ export default async function Work() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Mail Smirk', logo: logoMailSmirk }}
+        client={{ name: 'Enterprise Client' }}
       >
-        We approached <em>Studio</em> because we loved their past work. They
-        delivered something remarkably similar in record time.
+        Adam's technical vision combined with his business acumen allows him to consistently deliver solutions that align perfectly with our strategic objectives.
       </Testimonial>
 
-      <Clients />
+      <TechnicalSkills />
 
       <ContactSection />
     </>
+  )
+}
+
+function TechnicalSkills() {
+  return (
+    <Container className="mt-24 sm:mt-32 lg:mt-40">
+      <FadeIn>
+        <h2 className="font-display text-2xl font-semibold text-neutral-950">
+          Technical Skills & Technologies
+        </h2>
+      </FadeIn>
+      <FadeInStagger className="mt-10" faster>
+        <Border as={FadeIn} />
+        <div className="grid grid-cols-1 gap-y-10 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-12 pt-10">
+          <div>
+            <h3 className="font-semibold text-neutral-950">System Architecture</h3>
+            <ul className="mt-4 space-y-2 text-sm text-neutral-600">
+              <li>Microservices Architecture</li>
+              <li>Serverless/Event-driven Design</li>
+              <li>System Integration Patterns</li>
+              <li>Scalable Cloud Architecture</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold text-neutral-950">Cloud & Infrastructure</h3>
+            <ul className="mt-4 space-y-2 text-sm text-neutral-600">
+              <li>AWS (Lambda, S3, DynamoDB, Step Functions)</li>
+              <li>Azure Cloud Services</li>
+              <li>CI/CD Pipeline Implementation</li>
+              <li>Infrastructure as Code</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold text-neutral-950">Development & APIs</h3>
+            <ul className="mt-4 space-y-2 text-sm text-neutral-600">
+              <li>Python, TypeScript/JavaScript</li>
+              <li>GraphQL & RESTful API Design</li>
+              <li>SQL/NoSQL Database Design</li>
+              <li>React, Node.js, NextJS</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold text-neutral-950">Data & Integration</h3>
+            <ul className="mt-4 space-y-2 text-sm text-neutral-600">
+              <li>ETL Pipeline Development</li>
+              <li>Data Validation & Transformation</li>
+              <li>OAuth & API Security Implementation</li>
+              <li>HRIS & CRM System Integration</li>
+            </ul>
+          </div>
+        </div>
+      </FadeInStagger>
+    </Container>
   )
 }

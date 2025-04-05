@@ -31,12 +31,8 @@ export default async function CaseStudyLayout({ caseStudy, children }) {
                       <dd>{caseStudy.client}</dd>
                     </div>
                     <div className="border-t border-neutral-200 px-6 py-4 first:border-t-0 sm:border-t-0 sm:border-l">
-                      <dt className="font-semibold">Year</dt>
-                      <dd>
-                        <time dateTime={caseStudy.date.split('-')[0]}>
-                          {caseStudy.date.split('-')[0]}
-                        </time>
-                      </dd>
+                      <dt className="font-semibold">Specialty</dt>
+                      <dd>{caseStudy.date}</dd>
                     </div>
                     <div className="border-t border-neutral-200 px-6 py-4 first:border-t-0 sm:border-t-0 sm:border-l">
                       <dt className="font-semibold">Service</dt>
@@ -47,17 +43,19 @@ export default async function CaseStudyLayout({ caseStudy, children }) {
               </Container>
             </div>
 
-            <div className="border-y border-neutral-200 bg-neutral-100">
-              <div className="mx-auto -my-px max-w-[76rem] bg-neutral-200">
-                <GrayscaleTransitionImage
-                  {...caseStudy.image}
-                  quality={90}
-                  className="w-full"
-                  sizes="(min-width: 1216px) 76rem, 100vw"
-                  priority
-                />
+            {caseStudy.image && (
+              <div className="border-y border-neutral-200 bg-neutral-100">
+                <div className="mx-auto -my-px max-w-[76rem] bg-neutral-200">
+                  <GrayscaleTransitionImage
+                    {...caseStudy.image}
+                    quality={90}
+                    className="w-full"
+                    sizes="(min-width: 1216px) 76rem, 100vw"
+                    priority
+                  />
+                </div>
               </div>
-            </div>
+            )}
           </FadeIn>
         </header>
 
