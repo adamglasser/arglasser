@@ -136,27 +136,27 @@ export default async function About() {
     <>
       <PageIntro eyebrow="About me" title="Experience that delivers results">
         <p>
-          Innovative Customer Engineer and Solutions Architect with a track record of designing 
+          Innovative Customer Engineer and Solutions Architect with a track record of designing
           and implementing impactful technology solutions across diverse industries.
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            I specialize in data pipelines, custom API integrations, and product development, from 
-            rapid prototyping to production-ready systems. My approach combines deep technical expertise 
+            I specialize in data pipelines, custom API integrations, and product development, from
+            rapid prototyping to production-ready systems. My approach combines deep technical expertise
             with a strong business focus.
           </p>
           <p>
-            Throughout my career at Benepass and PFL, I've developed a reputation for translating complex 
-            business needs into effective technical solutions and communicating value to stakeholders 
+            Throughout my career at Benepass and PFL, I've developed a reputation for translating complex
+            business needs into effective technical solutions and communicating value to stakeholders
             at all levels.
           </p>
         </div>
       </PageIntro>
       <Container className="mt-16">
         <StatList>
-          <StatListItem value="7+" label="Years of experience" />
-          <StatListItem value="50%" label="Reduced onboarding time" />
-          <StatListItem value="$1M+" label="Professional services revenue" />
+          <StatListItem value="7+" label="Years of engineering experience" />
+          <StatListItem value="Full-Stack" label="Front-end, back-end & data expertise" />
+          <StatListItem value="Data" label="ETL, pipelines & analytics expertise" />
         </StatList>
       </Container>
 
