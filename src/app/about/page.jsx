@@ -146,7 +146,7 @@ export default async function About() {
             with a strong business focus.
           </p>
           <p>
-            Throughout my career at Benepass and PFL, I've developed a reputation for translating complex
+            Throughout my career, I've developed a reputation for translating complex
             business needs into effective technical solutions and communicating value to stakeholders
             at all levels.
           </p>
