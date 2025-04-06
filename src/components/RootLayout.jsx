@@ -113,7 +113,7 @@ function Header({
 
 function NavigationRow({ children }) {
   return (
-    <div className="even:mt-px sm:bg-[var(--volcanic-black)]">
+    <div className="even:mt-px sm:bg-[var(--volcanic-black)] w-full">
       <Container>
         <div className="grid grid-cols-1 sm:grid-cols-2">{children}</div>
       </Container>
@@ -205,7 +205,7 @@ function RootLayoutInner({ children }) {
             aria-hidden={expanded ? undefined : 'true'}
             inert={expanded ? undefined : ''}
           >
-            <motion.div layout className="bg-[var(--coniferous-green)]">
+            <motion.div layout className="bg-[var(--volcanic-black)] sm:bg-[var(--coniferous-green)]">
               <div ref={navRef} className="bg-[var(--volcanic-black)] pt-14 pb-16">
                 <Header
                   invert
