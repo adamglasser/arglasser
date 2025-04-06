@@ -13,32 +13,34 @@ import { loadArticles } from '@/lib/mdx'
 
 function Values() {
   return (
-    <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
-      <SectionIntro
-        eyebrow="My approach"
-        title="Solving complex challenges with technical excellence"
-        invert
-      >
-        <p>
-          My work is guided by a commitment to quality, innovation, and client success.
-        </p>
-      </SectionIntro>
-      <Container className="mt-16">
-        <GridList>
-          <GridListItem title="Strategic Thinking" invert>
-            I approach each challenge by understanding the bigger picture and designing solutions
-            that align with long-term business goals and technical roadmaps.
-          </GridListItem>
-          <GridListItem title="Customer Focus" invert>
-            I prioritize understanding client needs deeply, ensuring that technical solutions
-            deliver real business value and address core problems effectively.
-          </GridListItem>
-          <GridListItem title="Technical Excellence" invert>
-            I maintain high standards for code quality, system architecture, and performance,
-            creating solutions that are robust, scalable, and maintainable.
-          </GridListItem>
-        </GridList>
-      </Container>
+    <div className="relative w-full bg-neutral-950">
+      <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32 w-full">
+        <SectionIntro
+          eyebrow="My approach"
+          title="Solving complex challenges with technical excellence"
+          invert
+        >
+          <p>
+            My work is guided by a commitment to quality, innovation, and client success.
+          </p>
+        </SectionIntro>
+        <Container className="mt-16">
+          <GridList>
+            <GridListItem title="Strategic Thinking" invert>
+              I approach each challenge by understanding the bigger picture and designing solutions
+              that align with long-term business goals and technical roadmaps.
+            </GridListItem>
+            <GridListItem title="Customer Focus" invert>
+              I prioritize understanding client needs deeply, ensuring that technical solutions
+              deliver real business value and address core problems effectively.
+            </GridListItem>
+            <GridListItem title="Technical Excellence" invert>
+              I maintain high standards for code quality, system architecture, and performance,
+              creating solutions that are robust, scalable, and maintainable.
+            </GridListItem>
+          </GridList>
+        </Container>
+      </div>
     </div>
   )
 }
